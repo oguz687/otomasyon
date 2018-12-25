@@ -1,0 +1,1601 @@
+versions pytest-3.8.0, py-1.6.0, python-3.7.0.final.0
+cwd=/home/atessu/PycharmProjects/otomasyon/tests
+args=['--debug', 'test_otomasyon.py::Test_SayfaGetir']
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x7f8796784390>
+    pytest_plugin_registered [hook]
+        plugin: <Session 'tests'>
+        manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x7f8796784390>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x7f8796184c50>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x7f87961844a8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <teamcity.pytest_plugin.EchoTeamCityMessages object at 0x7f8796184208>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7f8796184518>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: py._io [assertion]
+    early skip of rewriting module: py._io.terminalwriter [assertion]
+    early skip of rewriting module: unicodedata [assertion]
+    early skip of rewriting module: termios [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7f8796784390>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'teamcity.pytest_plugin' from '/opt/pycharm-professional/helpers/pycharm/teamcity/pytest_plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_cov.plugin' from '/home/atessu/PycharmProjects/otomasyon/venviroment/lib/python3.7/site-packages/pytest_cov/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_remotedata.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_remotedata/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_openfiles.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_openfiles/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_doctestplus.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_doctestplus/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_arraydiff.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_arraydiff/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.capture.CaptureManager object at 0x7f87960f1b70>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session 'tests'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x7f8796184c50>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x7f87961844a8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <teamcity.pytest_plugin.EchoTeamCityMessages object at 0x7f8796184208>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7f8796184518>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7f8796182b38>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session 'tests'>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x7f8796784390>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.resultlog' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/resultlog.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'teamcity.pytest_plugin' from '/opt/pycharm-professional/helpers/pycharm/teamcity/pytest_plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_cov.plugin' from '/home/atessu/PycharmProjects/otomasyon/venviroment/lib/python3.7/site-packages/pytest_cov/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_remotedata.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_remotedata/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_openfiles.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_openfiles/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_doctestplus.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_doctestplus/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_arraydiff.plugin' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest_arraydiff/plugin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.capture.CaptureManager object at 0x7f87960f1b70>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session 'tests'>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x7f8796184c50>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x7f87961844a8>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <teamcity.pytest_plugin.EchoTeamCityMessages object at 0x7f8796184208>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x7f8796184518>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x7f8796182b38>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x7f879619a898>
+          manager: <_pytest.config.PytestPluginManager object at 0x7f8796925438>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x7f8796784390>
+          startdir: /home/atessu/PycharmProjects/otomasyon/tests
+      finish pytest_report_header --> [['rootdir: /home/atessu/PycharmProjects/otomasyon/tests, inifile:', 'plugins: cov-2.6.0, remotedata-0.3.0, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2'], ['using: pytest-3.8.0 pylib-1.6.0', 'setuptools registered plugins:', '  pytest-cov-2.6.0 at /home/atessu/PycharmProjects/otomasyon/venviroment/lib/python3.7/site-packages/pytest_cov/plugin.py', '  pytest-remotedata-0.3.0 at /home/atessu/anaconda3/lib/python3.7/site-packages/pytest_remotedata/plugin.py', '  pytest-openfiles-0.3.0 at /home/atessu/anaconda3/lib/python3.7/site-packages/pytest_openfiles/plugin.py', '  pytest-doctestplus-0.1.3 at /home/atessu/anaconda3/lib/python3.7/site-packages/pytest_doctestplus/plugin.py', '  pytest-arraydiff-0.2 at /home/atessu/anaconda3/lib/python3.7/site-packages/pytest_arraydiff/plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session 'tests'>
+    perform_collect <Session 'tests'> ['test_otomasyon.py::Test_SayfaGetir'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session 'tests'>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session 'tests'>
+        processing argument /home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py::Test_SayfaGetir [collection]
+            pytest_collect_file [hook]
+                path: /home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py
+                parent: <Session 'tests'>
+              pytest_pycollect_makemodule [hook]
+                  path: /home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py
+                  parent: <Session 'tests'>
+              finish pytest_pycollect_makemodule --> <Module 'test_otomasyon.py'> [hook]
+            finish pytest_collect_file --> [<Module 'test_otomasyon.py'>] [hook]
+          matchnodes [<Module 'test_otomasyon.py'>] ['Test_SayfaGetir'] [collection]
+              pytest_collectstart [hook]
+                  collector: <Module 'test_otomasyon.py'>
+              finish pytest_collectstart --> [] [hook]
+              pytest_make_collect_report [hook]
+                  collector: <Module 'test_otomasyon.py'>
+              find_module called for: test_otomasyon [assertion]
+              matched test file (was specified on cmdline): '/home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py' [assertion]
+              rewriting '/home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py' [assertion]
+              early skip of rewriting module: typing [assertion]
+              early skip of rewriting module: bs4 [assertion]
+              early skip of rewriting module: bs4.builder [assertion]
+              early skip of rewriting module: bs4.element [assertion]
+              early skip of rewriting module: bs4.dammit [assertion]
+              early skip of rewriting module: html [assertion]
+              early skip of rewriting module: html.entities [assertion]
+              early skip of rewriting module: cchardet [assertion]
+              early skip of rewriting module: chardet [assertion]
+              early skip of rewriting module: chardet.compat [assertion]
+              early skip of rewriting module: chardet.universaldetector [assertion]
+              early skip of rewriting module: chardet.charsetgroupprober [assertion]
+              early skip of rewriting module: chardet.enums [assertion]
+              early skip of rewriting module: chardet.charsetprober [assertion]
+              early skip of rewriting module: chardet.escprober [assertion]
+              early skip of rewriting module: chardet.codingstatemachine [assertion]
+              early skip of rewriting module: chardet.escsm [assertion]
+              early skip of rewriting module: chardet.latin1prober [assertion]
+              early skip of rewriting module: chardet.mbcsgroupprober [assertion]
+              early skip of rewriting module: chardet.utf8prober [assertion]
+              early skip of rewriting module: chardet.mbcssm [assertion]
+              early skip of rewriting module: chardet.sjisprober [assertion]
+              early skip of rewriting module: chardet.mbcharsetprober [assertion]
+              early skip of rewriting module: chardet.chardistribution [assertion]
+              early skip of rewriting module: chardet.euctwfreq [assertion]
+              early skip of rewriting module: chardet.euckrfreq [assertion]
+              early skip of rewriting module: chardet.gb2312freq [assertion]
+              early skip of rewriting module: chardet.big5freq [assertion]
+              early skip of rewriting module: chardet.jisfreq [assertion]
+              early skip of rewriting module: chardet.jpcntx [assertion]
+              early skip of rewriting module: chardet.eucjpprober [assertion]
+              early skip of rewriting module: chardet.gb2312prober [assertion]
+              early skip of rewriting module: chardet.euckrprober [assertion]
+              early skip of rewriting module: chardet.cp949prober [assertion]
+              early skip of rewriting module: chardet.big5prober [assertion]
+              early skip of rewriting module: chardet.euctwprober [assertion]
+              early skip of rewriting module: chardet.sbcsgroupprober [assertion]
+              early skip of rewriting module: chardet.sbcharsetprober [assertion]
+              early skip of rewriting module: chardet.langcyrillicmodel [assertion]
+              early skip of rewriting module: chardet.langgreekmodel [assertion]
+              early skip of rewriting module: chardet.langbulgarianmodel [assertion]
+              early skip of rewriting module: chardet.langthaimodel [assertion]
+              early skip of rewriting module: chardet.langhebrewmodel [assertion]
+              early skip of rewriting module: chardet.hebrewprober [assertion]
+              early skip of rewriting module: chardet.langturkishmodel [assertion]
+              early skip of rewriting module: chardet.version [assertion]
+              early skip of rewriting module: iconv_codec [assertion]
+              early skip of rewriting module: bs4.builder._htmlparser [assertion]
+              early skip of rewriting module: html.parser [assertion]
+              early skip of rewriting module: _markupbase [assertion]
+              early skip of rewriting module: bs4.builder._html5lib [assertion]
+              early skip of rewriting module: html5lib [assertion]
+              early skip of rewriting module: html5lib.html5parser [assertion]
+              early skip of rewriting module: html5lib._inputstream [assertion]
+              early skip of rewriting module: webencodings [assertion]
+              early skip of rewriting module: webencodings.labels [assertion]
+              early skip of rewriting module: encodings.utf_16_le [assertion]
+              early skip of rewriting module: encodings.utf_16_be [assertion]
+              early skip of rewriting module: html5lib.constants [assertion]
+              early skip of rewriting module: html5lib._utils [assertion]
+              early skip of rewriting module: xml.etree [assertion]
+              early skip of rewriting module: xml.etree.cElementTree [assertion]
+              early skip of rewriting module: xml.etree.ElementTree [assertion]
+              early skip of rewriting module: xml.etree.ElementPath [assertion]
+              early skip of rewriting module: _elementtree [assertion]
+              early skip of rewriting module: html5lib._tokenizer [assertion]
+              early skip of rewriting module: html5lib._trie [assertion]
+              early skip of rewriting module: html5lib._trie.py [assertion]
+              early skip of rewriting module: html5lib._trie._base [assertion]
+              early skip of rewriting module: html5lib._trie.datrie [assertion]
+              early skip of rewriting module: datrie [assertion]
+              early skip of rewriting module: html5lib.treebuilders [assertion]
+              early skip of rewriting module: html5lib.treebuilders.base [assertion]
+              early skip of rewriting module: html5lib.treewalkers [assertion]
+              early skip of rewriting module: html5lib.serializer [assertion]
+              early skip of rewriting module: xml.sax [assertion]
+              early skip of rewriting module: xml.sax.xmlreader [assertion]
+              early skip of rewriting module: xml.sax.handler [assertion]
+              early skip of rewriting module: xml.sax._exceptions [assertion]
+              early skip of rewriting module: xml.sax.saxutils [assertion]
+              early skip of rewriting module: html5lib.treebuilders._base [assertion]
+              early skip of rewriting module: bs4.builder._lxml [assertion]
+              early skip of rewriting module: lxml [assertion]
+              early skip of rewriting module: lxml.etree [assertion]
+              early skip of rewriting module: backports_abc [assertion]
+              early skip of rewriting module: lxml._elementpath [assertion]
+              early skip of rewriting module: backports_abc [assertion]
+              early skip of rewriting module: lxml.re [assertion]
+              early skip of rewriting module: rnc2rng [assertion]
+              early skip of rewriting module: otomasyondb [assertion]
+              early skip of rewriting module: pymongo [assertion]
+              early skip of rewriting module: pymongo.collection [assertion]
+              early skip of rewriting module: bson [assertion]
+              early skip of rewriting module: bson.binary [assertion]
+              early skip of rewriting module: bson.py3compat [assertion]
+              early skip of rewriting module: bson.code [assertion]
+              early skip of rewriting module: bson.codec_options [assertion]
+              early skip of rewriting module: bson.dbref [assertion]
+              early skip of rewriting module: bson.son [assertion]
+              early skip of rewriting module: bson.decimal128 [assertion]
+              early skip of rewriting module: bson.errors [assertion]
+              early skip of rewriting module: bson.int64 [assertion]
+              early skip of rewriting module: bson.max_key [assertion]
+              early skip of rewriting module: bson.min_key [assertion]
+              early skip of rewriting module: bson.objectid [assertion]
+              early skip of rewriting module: bson.tz_util [assertion]
+              early skip of rewriting module: bson.regex [assertion]
+              early skip of rewriting module: bson.timestamp [assertion]
+              early skip of rewriting module: bson._cbson [assertion]
+              early skip of rewriting module: bson.raw_bson [assertion]
+              early skip of rewriting module: pymongo.common [assertion]
+              early skip of rewriting module: pymongo.auth [assertion]
+              early skip of rewriting module: hmac [assertion]
+              early skip of rewriting module: urllib.quote [assertion]
+              early skip of rewriting module: winkerberos [assertion]
+              early skip of rewriting module: kerberos [assertion]
+              early skip of rewriting module: pymongo.errors [assertion]
+              early skip of rewriting module: pymongo.saslprep [assertion]
+              early skip of rewriting module: stringprep [assertion]
+              early skip of rewriting module: backports [assertion]
+              early skip of rewriting module: backports.pbkdf2 [assertion]
+              early skip of rewriting module: pymongo.compression_support [assertion]
+              early skip of rewriting module: snappy [assertion]
+              early skip of rewriting module: pymongo.monitoring [assertion]
+              early skip of rewriting module: pymongo.helpers [assertion]
+              early skip of rewriting module: pymongo.driver_info [assertion]
+              early skip of rewriting module: pymongo.read_concern [assertion]
+              early skip of rewriting module: pymongo.read_preferences [assertion]
+              early skip of rewriting module: pymongo.max_staleness_selectors [assertion]
+              early skip of rewriting module: pymongo.server_type [assertion]
+              early skip of rewriting module: pymongo.server_selectors [assertion]
+              early skip of rewriting module: pymongo.ssl_support [assertion]
+              early skip of rewriting module: certifi [assertion]
+              early skip of rewriting module: certifi.core [assertion]
+              early skip of rewriting module: wincertstore [assertion]
+              early skip of rewriting module: pymongo.write_concern [assertion]
+              early skip of rewriting module: pymongo.message [assertion]
+              early skip of rewriting module: pymongo._cmessage [assertion]
+              early skip of rewriting module: pymongo.bulk [assertion]
+              early skip of rewriting module: pymongo.client_session [assertion]
+              early skip of rewriting module: pymongo.monotonic [assertion]
+              early skip of rewriting module: monotime [assertion]
+              early skip of rewriting module: monotonic [assertion]
+              early skip of rewriting module: pymongo.collation [assertion]
+              early skip of rewriting module: pymongo.command_cursor [assertion]
+              early skip of rewriting module: pymongo.change_stream [assertion]
+              early skip of rewriting module: pymongo.cursor [assertion]
+              early skip of rewriting module: pymongo.operations [assertion]
+              early skip of rewriting module: pymongo.results [assertion]
+              early skip of rewriting module: pymongo.mongo_client [assertion]
+              early skip of rewriting module: pymongo.database [assertion]
+              early skip of rewriting module: pymongo.son_manipulator [assertion]
+              early skip of rewriting module: pymongo.periodic_executor [assertion]
+              early skip of rewriting module: pymongo.uri_parser [assertion]
+              early skip of rewriting module: dns [assertion]
+              early skip of rewriting module: pymongo.client_options [assertion]
+              early skip of rewriting module: pymongo.pool [assertion]
+              early skip of rewriting module: pymongo.thread_util [assertion]
+              early skip of rewriting module: pymongo.ismaster [assertion]
+              early skip of rewriting module: pymongo.network [assertion]
+              early skip of rewriting module: pymongo.ssl_match_hostname [assertion]
+              early skip of rewriting module: ipaddress [assertion]
+              early skip of rewriting module: encodings.idna [assertion]
+              early skip of rewriting module: pymongo.cursor_manager [assertion]
+              early skip of rewriting module: pymongo.topology [assertion]
+              early skip of rewriting module: queue [assertion]
+              early skip of rewriting module: _queue [assertion]
+              early skip of rewriting module: pymongo.topology_description [assertion]
+              early skip of rewriting module: pymongo.server_description [assertion]
+              early skip of rewriting module: pymongo.server [assertion]
+              early skip of rewriting module: pymongo.response [assertion]
+              early skip of rewriting module: pymongo.settings [assertion]
+              early skip of rewriting module: pymongo.monitor [assertion]
+              early skip of rewriting module: pymongo.mongo_replica_set_client [assertion]
+              early skip of rewriting module: otom [assertion]
+              early skip of rewriting module: kivy [assertion]
+              early skip of rewriting module: getopt [assertion]
+              early skip of rewriting module: kivy.compat [assertion]
+              early skip of rewriting module: kivy.logger [assertion]
+              early skip of rewriting module: kivy.utils [assertion]
+              early skip of rewriting module: kivy.version [assertion]
+              early skip of rewriting module: kivy.deps [assertion]
+              early skip of rewriting module: kivy.config [assertion]
+              early skip of rewriting module: ConfigParser [assertion]
+              early skip of rewriting module: kivy.modules [assertion]
+              early skip of rewriting module: kivy.app [assertion]
+              early skip of rewriting module: kivy.base [assertion]
+              early skip of rewriting module: kivy.clock [assertion]
+              early skip of rewriting module: kivy.context [assertion]
+              early skip of rewriting module: kivy._clock [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.weakmethod [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.threading [assertion]
+              early skip of rewriting module: ctypes.util [assertion]
+              early skip of rewriting module: kivy.event [assertion]
+              early skip of rewriting module: kivy._event [assertion]
+              early skip of rewriting module: kivy.properties [assertion]
+              early skip of rewriting module: kivy.weakref [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.functools [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: backports_abc [assertion]
+              early skip of rewriting module: kivy.functools [assertion]
+              early skip of rewriting module: kivy.collections [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.kivy [assertion]
+              early skip of rewriting module: kivy.lang [assertion]
+              early skip of rewriting module: kivy.lang.builder [assertion]
+              early skip of rewriting module: kivy.factory [assertion]
+              early skip of rewriting module: kivy.factory_registers [assertion]
+              early skip of rewriting module: kivy.lang.parser [assertion]
+              early skip of rewriting module: kivy.cache [assertion]
+              early skip of rewriting module: kivy.resources [assertion]
+              early skip of rewriting module: kivy.metrics [assertion]
+              early skip of rewriting module: kivy.setupconfig [assertion]
+              early skip of rewriting module: kivy.uix [assertion]
+              early skip of rewriting module: kivy.uix.widget [assertion]
+              early skip of rewriting module: kivy.graphics [assertion]
+              early skip of rewriting module: kivy.graphics.instructions [assertion]
+              early skip of rewriting module: kivy.graphics.buffer [assertion]
+              early skip of rewriting module: kivy.graphics.vertex [assertion]
+              early skip of rewriting module: kivy.graphics.cgl [assertion]
+              early skip of rewriting module: kivy.graphics.sys [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.importlib [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.vbo [assertion]
+              early skip of rewriting module: kivy.graphics.compiler [assertion]
+              early skip of rewriting module: kivy.graphics.transformation [assertion]
+              early skip of rewriting module: kivy.graphics.shader [assertion]
+              early skip of rewriting module: kivy.graphics.texture [assertion]
+              early skip of rewriting module: kivy.graphics.context_instructions [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.core [assertion]
+              early skip of rewriting module: kivy.core.image [assertion]
+              early skip of rewriting module: imghdr [assertion]
+              early skip of rewriting module: kivy.atlas [assertion]
+              early skip of rewriting module: kivy.core.image.img_tex [assertion]
+              early skip of rewriting module: kivy.core.image.img_dds [assertion]
+              early skip of rewriting module: kivy.lib [assertion]
+              early skip of rewriting module: kivy.lib.ddsfile [assertion]
+              early skip of rewriting module: kivy.core.image.img_pygame [assertion]
+              early skip of rewriting module: pygame [assertion]
+              early skip of rewriting module: pygame.base [assertion]
+              early skip of rewriting module: pygame.constants [assertion]
+              early skip of rewriting module: pygame.version [assertion]
+              early skip of rewriting module: pygame.rect [assertion]
+              early skip of rewriting module: pygame.compat [assertion]
+              early skip of rewriting module: pygame.rwobject [assertion]
+              early skip of rewriting module: pygame.surflock [assertion]
+              early skip of rewriting module: pygame.color [assertion]
+              early skip of rewriting module: pygame.colordict [assertion]
+              early skip of rewriting module: pygame.bufferproxy [assertion]
+              early skip of rewriting module: pygame.math [assertion]
+              early skip of rewriting module: pygame.cdrom [assertion]
+              early skip of rewriting module: pygame.cursors [assertion]
+              early skip of rewriting module: pygame.display [assertion]
+              early skip of rewriting module: pygame.surface [assertion]
+              early skip of rewriting module: pygame.draw [assertion]
+              early skip of rewriting module: pygame.event [assertion]
+              early skip of rewriting module: pygame.image [assertion]
+              early skip of rewriting module: pygame.imageext [assertion]
+              early skip of rewriting module: pygame.joystick [assertion]
+              early skip of rewriting module: pygame.key [assertion]
+              early skip of rewriting module: pygame.mouse [assertion]
+              early skip of rewriting module: pygame.sprite [assertion]
+              early skip of rewriting module: pygame.time [assertion]
+              early skip of rewriting module: pygame.mask [assertion]
+              early skip of rewriting module: pygame.threads [assertion]
+              early skip of rewriting module: pygame.pixelcopy [assertion]
+              early skip of rewriting module: pygame.pixelarray [assertion]
+              early skip of rewriting module: pygame.overlay [assertion]
+              early skip of rewriting module: pygame.transform [assertion]
+              early skip of rewriting module: pygame.font [assertion]
+              early skip of rewriting module: pygame.sysfont [assertion]
+              early skip of rewriting module: pygame.mixer_music [assertion]
+              early skip of rewriting module: pygame.mixer [assertion]
+              early skip of rewriting module: pygame.movie [assertion]
+              early skip of rewriting module: pygame.scrap [assertion]
+              early skip of rewriting module: pygame.surfarray [assertion]
+              early skip of rewriting module: pygame._numpysurfarray [assertion]
+              early skip of rewriting module: pygame.sndarray [assertion]
+              early skip of rewriting module: pygame._numpysndarray [assertion]
+              early skip of rewriting module: pygame.fastevent [assertion]
+              early skip of rewriting module: kivy.core.image.img_pil [assertion]
+              early skip of rewriting module: Image [assertion]
+              early skip of rewriting module: PIL [assertion]
+              early skip of rewriting module: PIL._version [assertion]
+              early skip of rewriting module: PIL.Image [assertion]
+              early skip of rewriting module: PIL._util [assertion]
+              early skip of rewriting module: PIL._imaging [assertion]
+              early skip of rewriting module: PIL.ImageMode [assertion]
+              early skip of rewriting module: PIL._binary [assertion]
+              early skip of rewriting module: cffi [assertion]
+              early skip of rewriting module: cffi.api [assertion]
+              early skip of rewriting module: cffi.lock [assertion]
+              early skip of rewriting module: cffi.error [assertion]
+              early skip of rewriting module: cffi.model [assertion]
+              early skip of rewriting module: kivy.core.image.img_ffpyplayer [assertion]
+              early skip of rewriting module: ffpyplayer [assertion]
+              early skip of rewriting module: kivy.core.image.img_gif [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.fbo [assertion]
+              early skip of rewriting module: kivy.graphics.context [assertion]
+              early skip of rewriting module: kivy.graphics.gc [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.weakref [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.time [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.stencil_instructions [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.opengl [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.opengl_utils [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.weakref [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.vertex_instructions [assertion]
+              early skip of rewriting module: kivy.graphics.os [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.itertools [assertion]
+              early skip of rewriting module: kivy.graphics.gl_instructions [assertion]
+              early skip of rewriting module: kivy.graphics.scissor_instructions [assertion]
+              early skip of rewriting module: kivy.weakproxy [assertion]
+              early skip of rewriting module: kivy.weakref [assertion]
+              early skip of rewriting module: kivy.operator [assertion]
+              early skip of rewriting module: kivy.graphics.tesselator [assertion]
+              early skip of rewriting module: kivy.graphics.array [assertion]
+              early skip of rewriting module: kivy.uix.floatlayout [assertion]
+              early skip of rewriting module: kivy.uix.layout [assertion]
+              early skip of rewriting module: kivy.uix.gridlayout [assertion]
+              early skip of rewriting module: kivy.uix.textinput [assertion]
+              early skip of rewriting module: kivy.animation [assertion]
+              early skip of rewriting module: kivy.uix.behaviors [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.button [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.togglebutton [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.drag [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.focus [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.compoundselection [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.codenavigation [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.emacs [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.cover [assertion]
+              early skip of rewriting module: kivy.uix.behaviors.touchripple [assertion]
+              early skip of rewriting module: kivy.uix.relativelayout [assertion]
+              early skip of rewriting module: kivy.core.text [assertion]
+              early skip of rewriting module: kivy.core.text.text_layout [assertion]
+              early skip of rewriting module: kivy.core.text.text_pygame [assertion]
+              early skip of rewriting module: kivy.uix.bubble [assertion]
+              early skip of rewriting module: kivy.uix.image [assertion]
+              early skip of rewriting module: kivy.uix.scatter [assertion]
+              early skip of rewriting module: kivy.vector [assertion]
+              early skip of rewriting module: kivy.uix.boxlayout [assertion]
+              early skip of rewriting module: kivy.uix.button [assertion]
+              early skip of rewriting module: kivy.uix.label [assertion]
+              early skip of rewriting module: kivy.core.text.markup [assertion]
+              early skip of rewriting module: kivy.parser [assertion]
+              early skip of rewriting module: kivy.core.window [assertion]
+              early skip of rewriting module: kivy.core.window.window_egl_rpi [assertion]
+              early skip of rewriting module: kivy.lib.vidcore_lite [assertion]
+              early skip of rewriting module: kivy.lib.vidcore_lite.bcm [assertion]
+              early skip of rewriting module: kivy.lib.vidcore_lite.egl [assertion]
+              early skip of rewriting module: kivy.core.window.window_pygame [assertion]
+              early skip of rewriting module: kivy.core.gl [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend.cgl_glew [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend.cgl_gl [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend.kivy [assertion]
+              early skip of rewriting module: kivy.graphics.cgl_backend.kivy [assertion]
+              early skip of rewriting module: kivy.uix.popup [assertion]
+              early skip of rewriting module: kivy.uix.modalview [assertion]
+              early skip of rewriting module: kivy.uix.anchorlayout [assertion]
+              early skip of rewriting module: asyncio [assertion]
+              early skip of rewriting module: asyncio.base_events [assertion]
+              early skip of rewriting module: concurrent [assertion]
+              early skip of rewriting module: concurrent.futures [assertion]
+              early skip of rewriting module: concurrent.futures._base [assertion]
+              early skip of rewriting module: asyncio.constants [assertion]
+              early skip of rewriting module: asyncio.coroutines [assertion]
+              early skip of rewriting module: asyncio.base_futures [assertion]
+              early skip of rewriting module: asyncio.format_helpers [assertion]
+              early skip of rewriting module: asyncio.log [assertion]
+              early skip of rewriting module: asyncio.events [assertion]
+              early skip of rewriting module: contextvars [assertion]
+              early skip of rewriting module: _contextvars [assertion]
+              early skip of rewriting module: _asyncio [assertion]
+              early skip of rewriting module: asyncio.base_tasks [assertion]
+              early skip of rewriting module: asyncio.futures [assertion]
+              early skip of rewriting module: asyncio.protocols [assertion]
+              early skip of rewriting module: asyncio.sslproto [assertion]
+              early skip of rewriting module: asyncio.transports [assertion]
+              early skip of rewriting module: asyncio.tasks [assertion]
+              early skip of rewriting module: asyncio.locks [assertion]
+              early skip of rewriting module: asyncio.runners [assertion]
+              early skip of rewriting module: asyncio.queues [assertion]
+              early skip of rewriting module: asyncio.streams [assertion]
+              early skip of rewriting module: asyncio.subprocess [assertion]
+              early skip of rewriting module: asyncio.unix_events [assertion]
+              early skip of rewriting module: asyncio.base_subprocess [assertion]
+              early skip of rewriting module: asyncio.selector_events [assertion]
+              early skip of rewriting module: kivy.core.clipboard [assertion]
+              early skip of rewriting module: kivy.core.clipboard.clipboard_xclip [assertion]
+              early skip of rewriting module: kivy.core.clipboard._clipboard_ext [assertion]
+              early skip of rewriting module: kivy.uix.screenmanager [assertion]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __name__
+                    obj: test_otomasyon
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __doc__
+                    obj: None
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __package__
+                    obj: 
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __loader__
+                    obj: <_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7f87967b1ef0>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __spec__
+                    obj: ModuleSpec(name='test_otomasyon', loader=<_pytest.assertion.rewrite.AssertionRewritingHook object at 0x7f87967b1ef0>, origin='/home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py')
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __file__
+                    obj: /home/atessu/PycharmProjects/otomasyon/tests/test_otomasyon.py
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __cached__
+                    obj: /home/atessu/PycharmProjects/otomasyon/tests/__pycache__/test_otomasyon.cpython-37-PYTEST.pyc
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __builtins__
+                    obj: {'__name__': 'builtins', '__doc__': "Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.", '__package__': '', '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>), '__build_class__': <built-in function __build_class__>, '__import__': <built-in function __import__>, 'abs': <built-in function abs>, 'all': <built-in function all>, 'any': <built-in function any>, 'ascii': <built-in function ascii>, 'bin': <built-in function bin>, 'breakpoint': <built-in function breakpoint>, 'callable': <built-in function callable>, 'chr': <built-in function chr>, 'compile': <built-in function compile>, 'delattr': <built-in function delattr>, 'dir': <built-in function dir>, 'divmod': <built-in function divmod>, 'eval': <built-in function eval>, 'exec': <built-in function exec>, 'format': <built-in function format>, 'getattr': <built-in function getattr>, 'globals': <built-in function globals>, 'hasattr': <built-in function hasattr>, 'hash': <built-in function hash>, 'hex': <built-in function hex>, 'id': <built-in function id>, 'input': <built-in function input>, 'isinstance': <built-in function isinstance>, 'issubclass': <built-in function issubclass>, 'iter': <built-in function iter>, 'len': <built-in function len>, 'locals': <built-in function locals>, 'max': <built-in function max>, 'min': <built-in function min>, 'next': <built-in function next>, 'oct': <built-in function oct>, 'ord': <built-in function ord>, 'pow': <built-in function pow>, 'print': <built-in function print>, 'repr': <built-in function repr>, 'round': <built-in function round>, 'setattr': <built-in function setattr>, 'sorted': <built-in function sorted>, 'sum': <built-in function sum>, 'vars': <built-in function vars>, 'None': None, 'Ellipsis': Ellipsis, 'NotImplemented': NotImplemented, 'False': False, 'True': True, 'bool': <class 'bool'>, 'memoryview': <class 'memoryview'>, 'bytearray': <class 'bytearray'>, 'bytes': <class 'bytes'>, 'classmethod': <class 'classmethod'>, 'complex': <class 'complex'>, 'dict': <class 'dict'>, 'enumerate': <class 'enumerate'>, 'filter': <class 'filter'>, 'float': <class 'float'>, 'frozenset': <class 'frozenset'>, 'property': <class 'property'>, 'int': <class 'int'>, 'list': <class 'list'>, 'map': <class 'map'>, 'object': <class 'object'>, 'range': <class 'range'>, 'reversed': <class 'reversed'>, 'set': <class 'set'>, 'slice': <class 'slice'>, 'staticmethod': <class 'staticmethod'>, 'str': <class 'str'>, 'super': <class 'super'>, 'tuple': <class 'tuple'>, 'type': <class 'type'>, 'zip': <class 'zip'>, '__debug__': True, 'BaseException': <class 'BaseException'>, 'Exception': <class 'Exception'>, 'TypeError': <class 'TypeError'>, 'StopAsyncIteration': <class 'StopAsyncIteration'>, 'StopIteration': <class 'StopIteration'>, 'GeneratorExit': <class 'GeneratorExit'>, 'SystemExit': <class 'SystemExit'>, 'KeyboardInterrupt': <class 'KeyboardInterrupt'>, 'ImportError': <class 'ImportError'>, 'ModuleNotFoundError': <class 'ModuleNotFoundError'>, 'OSError': <class 'OSError'>, 'EnvironmentError': <class 'OSError'>, 'IOError': <class 'OSError'>, 'EOFError': <class 'EOFError'>, 'RuntimeError': <class 'RuntimeError'>, 'RecursionError': <class 'RecursionError'>, 'NotImplementedError': <class 'NotImplementedError'>, 'NameError': <class 'NameError'>, 'UnboundLocalError': <class 'UnboundLocalError'>, 'AttributeError': <class 'AttributeError'>, 'SyntaxError': <class 'SyntaxError'>, 'IndentationError': <class 'IndentationError'>, 'TabError': <class 'TabError'>, 'LookupError': <class 'LookupError'>, 'IndexError': <class 'IndexError'>, 'KeyError': <class 'KeyError'>, 'ValueError': <class 'ValueError'>, 'UnicodeError': <class 'UnicodeError'>, 'UnicodeEncodeError': <class 'UnicodeEncodeError'>, 'UnicodeDecodeError': <class 'UnicodeDecodeError'>, 'UnicodeTranslateError': <class 'UnicodeTranslateError'>, 'AssertionError': <class 'AssertionError'>, 'ArithmeticError': <class 'ArithmeticError'>, 'FloatingPointError': <class 'FloatingPointError'>, 'OverflowError': <class 'OverflowError'>, 'ZeroDivisionError': <class 'ZeroDivisionError'>, 'SystemError': <class 'SystemError'>, 'ReferenceError': <class 'ReferenceError'>, 'MemoryError': <class 'MemoryError'>, 'BufferError': <class 'BufferError'>, 'Warning': <class 'Warning'>, 'UserWarning': <class 'UserWarning'>, 'DeprecationWarning': <class 'DeprecationWarning'>, 'PendingDeprecationWarning': <class 'PendingDeprecationWarning'>, 'SyntaxWarning': <class 'SyntaxWarning'>, 'RuntimeWarning': <class 'RuntimeWarning'>, 'FutureWarning': <class 'FutureWarning'>, 'ImportWarning': <class 'ImportWarning'>, 'UnicodeWarning': <class 'UnicodeWarning'>, 'BytesWarning': <class 'BytesWarning'>, 'ResourceWarning': <class 'ResourceWarning'>, 'ConnectionError': <class 'ConnectionError'>, 'BlockingIOError': <class 'BlockingIOError'>, 'BrokenPipeError': <class 'BrokenPipeError'>, 'ChildProcessError': <class 'ChildProcessError'>, 'ConnectionAbortedError': <class 'ConnectionAbortedError'>, 'ConnectionRefusedError': <class 'ConnectionRefusedError'>, 'ConnectionResetError': <class 'ConnectionResetError'>, 'FileExistsError': <class 'FileExistsError'>, 'FileNotFoundError': <class 'FileNotFoundError'>, 'IsADirectoryError': <class 'IsADirectoryError'>, 'NotADirectoryError': <class 'NotADirectoryError'>, 'InterruptedError': <class 'InterruptedError'>, 'PermissionError': <class 'PermissionError'>, 'ProcessLookupError': <class 'ProcessLookupError'>, 'TimeoutError': <class 'TimeoutError'>, 'open': <built-in function open>, 'quit': Use quit() or Ctrl-D (i.e. EOF) to exit, 'exit': Use exit() or Ctrl-D (i.e. EOF) to exit, 'copyright': Copyright (c) 2001-2018 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information., 'license': Type license() to see the full license text, 'help': Type help() for interactive help, or help(object) for help about object.}
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: @py_builtins
+                    obj: <module 'builtins' (built-in)>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: @pytest_ar
+                    obj: <module '_pytest.assertion.rewrite' from '/home/atessu/anaconda3/lib/python3.7/site-packages/_pytest/assertion/rewrite.py'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: Any
+                    obj: typing.Any
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: Union
+                    obj: typing.Union
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: pytest
+                    obj: <module 'pytest' from '/home/atessu/anaconda3/lib/python3.7/site-packages/pytest.py'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: URLError
+                    obj: <class 'urllib.error.URLError'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: HTTPError
+                    obj: <class 'urllib.error.HTTPError'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: bs
+                    obj: <class 'bs4.BeautifulSoup'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: Request
+                    obj: <class 'urllib.request.Request'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: ExceptionInfo
+                    obj: <class '_pytest._code.code.ExceptionInfo'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: Veritabani
+                    obj: <class 'otomasyondb.Veritabani'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: urllib
+                    obj: <module 'urllib' from '/home/atessu/anaconda3/lib/python3.7/urllib/__init__.py'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: SayfaGetir
+                    obj: <class 'otom.SayfaGetir'>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: Test_SayfaGetir
+                    obj: <class 'test_otomasyon.Test_SayfaGetir'>
+                finish pytest_pycollect_makeitem --> <Class 'Test_SayfaGetir'> [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __repr__
+                    obj: <slot wrapper '__repr__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __getattribute__
+                    obj: <slot wrapper '__getattribute__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __setattr__
+                    obj: <slot wrapper '__setattr__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __delattr__
+                    obj: <slot wrapper '__delattr__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __init__
+                    obj: <slot wrapper '__init__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __new__
+                    obj: <built-in method __new__ of type object at 0x563c4569e020>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __dir__
+                    obj: <method '__dir__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __dict__
+                    obj: <member '__dict__' of 'module' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __hash__
+                    obj: <slot wrapper '__hash__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __str__
+                    obj: <slot wrapper '__str__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __lt__
+                    obj: <slot wrapper '__lt__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __le__
+                    obj: <slot wrapper '__le__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __eq__
+                    obj: <slot wrapper '__eq__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __ne__
+                    obj: <slot wrapper '__ne__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __gt__
+                    obj: <slot wrapper '__gt__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __ge__
+                    obj: <slot wrapper '__ge__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __reduce_ex__
+                    obj: <method '__reduce_ex__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __reduce__
+                    obj: <method '__reduce__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __subclasshook__
+                    obj: <method '__subclasshook__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __init_subclass__
+                    obj: <method '__init_subclass__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __format__
+                    obj: <method '__format__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __sizeof__
+                    obj: <method '__sizeof__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+                pytest_pycollect_makeitem [hook]
+                    collector: <Module 'test_otomasyon.py'>
+                    name: __class__
+                    obj: <attribute '__class__' of 'object' objects>
+                finish pytest_pycollect_makeitem --> None [hook]
+              finish pytest_make_collect_report --> <CollectReport 'test_otomasyon.py' lenresult=1 outcome='passed'> [hook]
+            matchnodes [<Class 'Test_SayfaGetir'>] [] [collection]
+              matchnodes finished ->  1 nodes [collection]
+            matchnodes finished ->  1 nodes [collection]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Class 'Test_SayfaGetir'> [collection]
+      pytest_collectstart [hook]
+          collector: <Class 'Test_SayfaGetir'>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Class 'Test_SayfaGetir'>
+      finish pytest_make_collect_report --> <CollectReport 'test_otomasyon.py::Test_SayfaGetir' lenresult=1 outcome='passed'> [hook]
+    genitems <Instance '()'> [collection]
+      pytest_collectstart [hook]
+          collector: <Instance '()'>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Instance '()'>
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __module__
+            obj: test_otomasyon
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: test_get_page
+            obj: <function Test_SayfaGetir.test_get_page at 0x7f87961268c8>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7f87861a39b0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_get_page'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: test_check_page
+            obj: <function Test_SayfaGetir.test_check_page at 0x7f87861c2598>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7f87861a3b70>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_check_page'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: test_check_error_url
+            obj: <function Test_SayfaGetir.test_check_error_url at 0x7f87861c2620>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7f87861a3d30>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_check_error_url'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: test_check_read_page
+            obj: <function Test_SayfaGetir.test_check_read_page at 0x7f87861c26a8>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7f87861a3ef0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_check_read_page'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: test_read_page
+            obj: <function Test_SayfaGetir.test_read_page at 0x7f87861c2730>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x7f878515c0f0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_read_page'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __dict__
+            obj: <attribute '__dict__' of 'Test_SayfaGetir' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __weakref__
+            obj: <attribute '__weakref__' of 'Test_SayfaGetir' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __doc__
+            obj: None
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __repr__
+            obj: <slot wrapper '__repr__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __hash__
+            obj: <slot wrapper '__hash__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __str__
+            obj: <slot wrapper '__str__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __getattribute__
+            obj: <slot wrapper '__getattribute__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __setattr__
+            obj: <slot wrapper '__setattr__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __delattr__
+            obj: <slot wrapper '__delattr__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __lt__
+            obj: <slot wrapper '__lt__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __le__
+            obj: <slot wrapper '__le__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __eq__
+            obj: <slot wrapper '__eq__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __ne__
+            obj: <slot wrapper '__ne__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __gt__
+            obj: <slot wrapper '__gt__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __ge__
+            obj: <slot wrapper '__ge__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __init__
+            obj: <slot wrapper '__init__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __new__
+            obj: <built-in method __new__ of type object at 0x563c4569c600>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __reduce_ex__
+            obj: <method '__reduce_ex__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __reduce__
+            obj: <method '__reduce__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __subclasshook__
+            obj: <method '__subclasshook__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __init_subclass__
+            obj: <method '__init_subclass__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __format__
+            obj: <method '__format__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __sizeof__
+            obj: <method '__sizeof__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __dir__
+            obj: <method '__dir__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Instance '()'>
+            name: __class__
+            obj: <attribute '__class__' of 'object' objects>
+        finish pytest_pycollect_makeitem --> None [hook]
+      finish pytest_make_collect_report --> <CollectReport 'test_otomasyon.py::Test_SayfaGetir::()' lenresult=5 outcome='passed'> [hook]
+    genitems <Function 'test_get_page'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_get_page'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_check_page'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_check_page'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_check_error_url'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_check_error_url'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_check_read_page'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_check_read_page'>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function 'test_read_page'> [collection]
+      pytest_itemcollected [hook]
+          item: <Function 'test_read_page'>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'test_otomasyon.py::Test_SayfaGetir::()' lenresult=5 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'test_otomasyon.py::Test_SayfaGetir' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session 'tests'>
+          config: <_pytest.config.Config object at 0x7f8796784390>
+          items: [<Function 'test_get_page'>, <Function 'test_check_page'>, <Function 'test_check_error_url'>, <Function 'test_check_read_page'>, <Function 'test_read_page'>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session 'tests'>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x7f8796784390>
+            startdir: /home/atessu/PycharmProjects/otomasyon/tests
+            items: [<Function 'test_get_page'>, <Function 'test_check_page'>, <Function 'test_check_error_url'>, <Function 'test_check_read_page'>, <Function 'test_read_page'>]
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> [<Function 'test_get_page'>, <Function 'test_check_page'>, <Function 'test_check_error_url'>, <Function 'test_check_read_page'>, <Function 'test_read_page'>] [hook]
+    pytest_runtestloop [hook]
+        session: <Session 'tests'>
+      pytest_runtest_protocol [hook]
+          item: <Function 'test_get_page'>
+          nextitem: <Function 'test_check_page'>
+        pytest_runtest_logstart [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_get_page
+            location: ('test_otomasyon.py', 50, 'Test_SayfaGetir.test_get_page')
+        early skip of rewriting module: py._io.capture [assertion]
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function 'test_get_page'>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_get_page'>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='setup' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function 'test_get_page'>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function 'test_get_page'>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_get_page'>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='call' outcome='passed'>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function 'test_get_page'>
+            nextitem: <Function 'test_check_page'>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_get_page'>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_get_page' when='teardown' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_get_page
+            location: ('test_otomasyon.py', 50, 'Test_SayfaGetir.test_get_page')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function 'test_check_page'>
+          nextitem: <Function 'test_check_error_url'>
+        pytest_runtest_logstart [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_page
+            location: ('test_otomasyon.py', 56, 'Test_SayfaGetir.test_check_page')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function 'test_check_page'>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_page'>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='setup' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function 'test_check_page'>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function 'test_check_page'>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_page'>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='call' outcome='passed'>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function 'test_check_page'>
+            nextitem: <Function 'test_check_error_url'>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_page'>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_page' when='teardown' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_page
+            location: ('test_otomasyon.py', 56, 'Test_SayfaGetir.test_check_page')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function 'test_check_error_url'>
+          nextitem: <Function 'test_check_read_page'>
+        pytest_runtest_logstart [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url
+            location: ('test_otomasyon.py', 62, 'Test_SayfaGetir.test_check_error_url')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function 'test_check_error_url'>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_error_url'>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='setup' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function 'test_check_error_url'>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function 'test_check_error_url'>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_error_url'>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='call' outcome='passed'>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function 'test_check_error_url'>
+            nextitem: <Function 'test_check_read_page'>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_error_url'>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url' when='teardown' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url
+            location: ('test_otomasyon.py', 62, 'Test_SayfaGetir.test_check_error_url')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function 'test_check_read_page'>
+          nextitem: <Function 'test_read_page'>
+        pytest_runtest_logstart [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page
+            location: ('test_otomasyon.py', 68, 'Test_SayfaGetir.test_check_read_page')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function 'test_check_read_page'>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_read_page'>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='setup' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function 'test_check_read_page'>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function 'test_check_read_page'>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_read_page'>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='call' outcome='passed'>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function 'test_check_read_page'>
+            nextitem: <Function 'test_read_page'>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_check_read_page'>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page' when='teardown' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page
+            location: ('test_otomasyon.py', 68, 'Test_SayfaGetir.test_check_read_page')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function 'test_read_page'>
+          nextitem: None
+        pytest_runtest_logstart [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_read_page
+            location: ('test_otomasyon.py', 74, 'Test_SayfaGetir.test_read_page')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function 'test_read_page'>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_read_page'>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='setup' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function 'test_read_page'>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function 'test_read_page'>
+          early skip of rewriting module: encodings.cp1252 [assertion]
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_read_page'>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='call' outcome='passed'>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function 'test_read_page'>
+            nextitem: None
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function 'test_read_page'>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_otomasyon.py::Test_SayfaGetir::()::test_read_page' when='teardown' outcome='passed'>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_otomasyon.py::Test_SayfaGetir::()::test_read_page
+            location: ('test_otomasyon.py', 74, 'Test_SayfaGetir.test_read_page')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session 'tests'>
+        exitstatus: 0
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x7f8796182b38>
+          exitstatus: 0
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x7f8796784390>
+    finish pytest_unconfigure --> [] [hook]
+  finish [config:tmpdir]

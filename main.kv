@@ -1,0 +1,322 @@
+#:kivy 1.10.1
+#:import NoTransition kivy.uix.screenmanager.NoTransition
+#pos_hint,size_hint
+
+<Screen_Management>:
+	id: screen_management
+    girisekrani_screen: GirisEkrani_screen
+    kullaniciekle_screen: KullaniciEkle_screen
+    girisyap_screen: GirisYap_screen
+    anasayfa_screen: Anasayfa_screen
+    websayfa_screen: WebSayfa_screen
+    
+    transition: NoTransition()
+    GirisEkrani:
+        id: GirisEkrani_screen
+        name: "screen_1"
+        manager: screen_management
+    GirisYap:
+        id: GirisYap_screen
+        name: "screen_2"
+		manager: screen_management	   
+    KullaniciEkle:
+        id: KullaniciEkle_screen
+        name: "screen_3"
+        manager: screen_management
+	Anasayfa:
+		id: Anasayfa_screen
+		name: "screen_4"
+		manager: screen_management
+	WebSayfa:
+		id:WebSayfa_screen
+		name:"screen_5"
+		manager:screen_management
+<GirisEkrani>:
+	FloatLayout:
+		size_hint:1,1
+		Image:
+	        pos:root.x,root.y
+			source:"bckg.jpg"
+				
+		BoxLayout:
+			name:"girisekranı"
+			cols:2
+			padding: 10,10,10,10
+            spacing: 5
+            size_hint:1,.5    
+            orientation: "horizontal"
+			Button:
+				text:"Giriş Yap"		
+		        size_hint: 1,.5
+		        background_color:0, 0, 0, 0.54
+				on_press:app.sm.current="screen_2"
+			Button:
+				text:"Kullanıcı Ekle"			
+			    size_hint:1,.5
+			    background_color:0, 0, 0, 0.54
+
+				on_press:app.sm.current="screen_3"
+			
+<KullaniciEkle>:
+    FloatLayout:
+        orientation:"horizontal" 
+		Popup:
+			title:"Kullanıcı Ekleme Modülü"
+			size_hint:.5,.5
+			pos:root.center_x - self.width/2 , root.center_y - self.height/2
+			GridLayout:
+				cols:2
+				name:"adduser"
+				orientation:"vertical"
+				Label:		
+					text:"Kullanıcı"
+				TextInput:
+					id:metin
+					multiline:False
+				Label:
+					text:"Şifre" 
+				TextInput:
+					id: sifre
+					multiline:False   
+					password:True
+				Button:
+				    text:"Girişe Dön"
+					background_color:0, 0, 0, 0.94	
+				    size_hint:.5,.5
+					on_press:app.sm.current="screen_1"
+					
+				Button:
+					text:"Kullanıcı Ekle"
+					background_color:0, 0, 0, 0.94	
+					on_press:root.yazdır()
+					on_release:app.sm.current="screen_1"
+<GirisYap>:
+	FloatLayout:
+        orientation:"horizontal" 
+		background_color:0, 0, 0, 0.94
+		Popup:
+			title:"Kullanıcı Giriş Sayfası"
+			size_hint:.5,.5
+			
+			pos:root.center_x - self.width/2 , root.center_y - self.height/2
+			GridLayout:
+				cols:2
+				name:"girisyap"
+				orientation:"vertical"
+				Label:		
+					text:"Kullanıcı"
+				TextInput:
+					id:metin
+					multiline:False
+				Label:
+					text:"Şifre" 
+				TextInput:
+					id: sifre
+					multiline:False   
+					password:True
+				Button:
+				    text:"Girişe Dön"
+				    size_hint:.5,.5
+				    
+					on_press:app.sm.current="screen_1"
+				Button:
+					id:gir
+					text:"Giriş Yap"
+			
+					on_press:
+						if root.kontrol() == True: app.sm.current="screen_4"
+                        else : app.sm.current="screen_1"
+					on_release:
+<Anasayfa>:
+    FloatLayout:
+					
+		GridLayout:
+			cols:1
+			rows:6
+			size_hint:0.2,1
+			pos_hint:{"x":0.8,"y":0}
+			
+			orientation:"vertical"
+			Label:
+				text:"Veritabanı İşlevleri"
+			Button:
+				text:"Web Sayfalama"
+				on_press:app.sm.current="screen_5"
+			Button:
+				text:"Girdi İD listesi"
+				on_press:root.listele(2)
+			Button:
+				text:"Ayrıntılı Listele"
+				on_press:root.listele(3)	
+			Button:
+				text:"Girişe Dön"
+				on_press:app.sm.current="screen_1"
+				on_release:root.tusserbest("verilistesi")
+			Button:
+				text:"Veritabanına Ekle"
+				on_press:root.girdiEkle()
+				on_release:root.tusserbest("metind"),root.listele(1)
+		
+		FloatLayout:
+			size_hint: 0.8,0.1
+			pos_hint: {"x":0 ,"y":0}
+			orientation:"vertical"
+			TextInput:
+				id:metind
+		GridLayout:
+			size_hint:0.8,0.1
+			pos_hint:{"x":0,"y":0.9}
+			cols:1
+			rows:1
+			spacing: 5
+			BoxLayout:
+				orientation:"vertical"
+				size_hint:1,1
+				pos_hint:{"x":0,"y":0.9}
+				Label:
+					text:"Tüm Girdiler"
+				Button:
+					text:"Listele"
+					on_press:root.listele(1)
+					on_release:
+		ScrollView:
+			size_hint:.8,.8
+			pos_hint:{"left":0,"y":0.1}
+			scroll_type:["bars","content"]
+			do_scroll_y:True
+			scroll_y:0
+			bar_widht:10
+			
+			Label:
+				size_hint:1,None
+				id:verilistesi
+				text_size:self.width,None
+				size:self.texture_size
+				color:0, 1, 0, 0.25
+				halign:"left"
+				valign:"top"
+				height:self.texture_size[1]
+				text:"çıktılar buraya gelecek"			
+			
+			
+<WebSayfa>:
+	FloatLayout:		
+		GridLayout:
+			cols:1
+			rows:6
+			size_hint:0.2,1
+			pos_hint:{"x":0.8,"y":0}
+			
+			orientation:"vertical"
+			Label:
+				text:"Veritabanı İşlevleri"
+			Button:
+				text:"Web Sayfalama"
+				on_press:app.sm.current="screen_5"
+			Button:
+				text:"Girdi İD listesi"
+				on_press:
+			Button:
+				text:"Ayrıntılı Listele"
+				on_press:
+			Button:
+				text:"Girişe Dön"
+				on_press:app.sm.current="screen_1"
+				on_release:
+			Button:
+				text:"Veritabanına Ekle"
+				on_press:root.girdiEkle()
+				on_release:
+		GridLayout:
+			size_hint:0.8,0.05
+			pos_hint:{"x":0,"y":0.95}
+			cols:1
+			rows:1
+			spacing: 5
+			BoxLayout:
+				orientation:"horizontal"
+				size_hint:1,1
+				Label:
+					size_hint:.1,1
+					text:"URL:"
+				TextInput:
+					id:url
+					size_hint:.9,1
+					multiline:False
+					use_bubble: True
+					hint_text:"url giriniz"
+					text:""
+					text_validate_unfocus:False
+					on_text_validate:
+					
+					
+
+        GridLayout:
+			size_hint:0.8,0.05
+			pos_hint:{"x":0,"y":0.9}
+			cols:1
+			rows:1
+			spacing: 5
+			BoxLayout:
+				orientation:"vertical"
+				size_hint:1,1
+				Button:
+					text:"Sayfayı Getir"
+					on_press: 
+					on_release:root.sayfalama() and  root.tusserbest(url) 
+		ScrollView:
+			id:scrlv
+			size_hint:.8,.45
+			pos_hint:{"left":0,"y":.45}
+			scroll_type:["bars","content"]
+			do_scroll_y:True
+			scroll_y:0
+			bar_color:(0, 0, 0, 0.4)
+			bar_inactiv_color:(0, 0, 0.7, 0.4)
+			bar_width:13
+			
+			TextInput:
+				size_hint:1,None
+				height: max(self.minimum_height, scrlv.height)
+				id:sayfa
+				use_bubble:True
+				selection_text:""
+				focus:True
+				background_color:0,67,0,0.54
+				text:"çıktılar buraya gelecek"
+		Label:
+			size_hint:.8,.05
+			pos_hint:{"left":0,"y":.40}
+			text:"İşlenmiş Sayfa"
+			color:0,0,0,1
+			canvas.before: 
+				Color: 
+					rgb: 0, 1, 0, 0.25 
+				Rectangle: 
+					pos: self.pos 
+					size: self.size 
+
+					
+		ScrollView:
+			size_hint:.8,.4
+			pos_hint:{"left":0,"y":0}
+			scroll_type:["bars","content"]
+			do_scroll_y:True
+			scroll_y:0
+			bar_widht:10
+			Label:
+				size_hint:1,None
+				id:sayfa2
+				text_size:self.width,None
+				size:self.texture_size
+				color:0, 1, 0, 0.25
+				halign:"left"
+				valign:"top"
+				height:self.texture_size[1]
+				text:"çıktılar buraya gelecek"
+				
+
+
+    
+    
+

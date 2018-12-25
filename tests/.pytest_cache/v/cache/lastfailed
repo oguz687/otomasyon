@@ -1,0 +1,9 @@
+{
+  "test_otomasyon.py": true,
+  "test_otomasyon.py::TestSayfaGetir::()::test_get_page": true,
+  "test_otomasyon.py::Test_SayfaGetir::()::test_temp_sayfa": true,
+  "test_otomasyon.py::Test_Websayfa::()::test_check_fill_text": true,
+  "test_otomasyon.py::Test_Websayfa::()::test_sayfa_getir": true,
+  "test_otomasyon.py::Test_Websayfa::test_check_fill_text": true,
+  "test_otomasyon.py::Test_Websayfa::test_sayfa_getir": true
+}

@@ -1,0 +1,11 @@
+[
+  "test_otomasyon.py::Test_SayfaGetir::()::test_get_page",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_check_page",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_check_error_url",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_check_read_page",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_read_page",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_page_write_file",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_async_page_request",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_database_add",
+  "test_otomasyon.py::Test_SayfaGetir::()::test_database_get"
+]

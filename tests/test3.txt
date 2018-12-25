@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="tr-TR" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec" > <![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="tr-TR" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec" > <![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="tr-TR" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec" > <![endif]-->
+<!--[if IE 9]><html class="ie9" lang="tr-TR" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec" > <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="tr-TR" xmlns:addthis="https://www.addthis.com/help/api-spec" xmlns:fb="https://www.facebook.com/2008/fbml">
+ <!--<![endif]-->
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="yes" name="apple-touch-fullscreen">
+   <meta content="320" name="MobileOptimized"/>
+   <link href="//www.bilim.org/wp-content/cache/wpfc-minified/egerx2u5/5r7c7.css" media="all" rel="stylesheet" type="text/css"/>
+   <title>
+    Kilogram, amper, kelvin ve mol yeniden tanımlandı | Bilim.org
+   </title>
+   <link href="http://gmpg.org/xfn/11" rel="profile"/>
+   <link href="https://www.bilim.org/xmlrpc.php" rel="pingback"/>
+   <script type="text/javascript">
+    addthis_config = {
+ui_click : false,
+ui_delay : 100,
+ui_offset_top: 42,
+ui_use_css : true,
+data_track_addressbar : false,
+data_track_clickback : false
+};
+addthis_share = {
+url : "https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/",
+title : "Kilogram, amper, kelvin ve mol yeniden tanımlandı | Bilim.org",
+description : ""
+};
+   </script>
+   <link href="//www.google.com" rel="dns-prefetch">
+    <link href="//pxgcdn.com" rel="dns-prefetch">
+     <link href="//s7.addthis.com" rel="dns-prefetch"/>
+     <link href="//s.w.org" rel="dns-prefetch"/>
+     <link href="https://www.bilim.org/feed/" rel="alternate" title="Bilim.org » beslemesi" type="application/rss+xml"/>
+     <link href="https://www.bilim.org/comments/feed/" rel="alternate" title="Bilim.org » yorum beslemesi" type="application/rss+xml"/>
+     <link href="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/feed/" rel="alternate" title="Bilim.org » Kilogram, amper, kelvin ve mol yeniden tanımlandı yorum beslemesi" type="application/rss+xml"/>
+     <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.bilim.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.2"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+     </script>
+     <script src="https://www.bilim.org/wp-includes/js/jquery/jquery.js?ver=1.12.4" type="text/javascript">
+     </script>
+     <script src="//pxgcdn.com/js/rs/9.5.7/index.js?ver=5.0.2" type="text/javascript">
+     </script>
+     <link href="https://www.bilim.org/wp-json/" rel="https://api.w.org/"/>
+     <link href="https://www.bilim.org/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+     <link href="https://www.bilim.org/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+     <link href="https://www.bilim.org/cinlilerden-genetigi-degistirilmis-bebek-hamlesi/" rel="prev" title="Çinlilerden genetiği değiştirilmiş bebek hamlesi"/>
+     <link href="https://www.bilim.org/almanya-plastik-atiklari-azaltmak-icin-5-maddelik-bir-plan-acikladi/" rel="next" title="Almanya, plastik atıkları azaltmak için 5 maddelik bir plan açıkladı"/>
+     <meta content="WordPress 5.0.2" name="generator">
+      <link href="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/" rel="canonical"/>
+      <link href="https://www.bilim.org/?p=19571" rel="shortlink"/>
+      <link href="https://www.bilim.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bilim.org%2Fkilogram-amper-kelvin-ve-mol-yeniden-tanimlandi%2F" rel="alternate" type="application/json+oembed"/>
+      <link href="https://www.bilim.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bilim.org%2Fkilogram-amper-kelvin-ve-mol-yeniden-tanimlandi%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+      <script type="text/javascript">
+       if (typeof WebFont !== 'undefined') {                WebFont.load({
+google: {families: ['Open Sans:600:cyrillic','Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic:cyrillic','Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic:cyrillic']},
+classes: false,
+events: false
+});
+} else {
+var tk = document.createElement('script');
+tk.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+tk.type = 'text/javascript';
+tk.onload = tk.onreadystatechange = function () {
+WebFont.load({
+google: {families: ['Open Sans:600:cyrillic','Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic:cyrillic','Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic:cyrillic']},
+classes: false,
+events: false
+});
+};
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(tk, s);
+}
+      </script>
+      <script>
+      </script>
+      <script data-cfasync="false" type="text/javascript">
+       if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.8"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "5.0.2"; } if (window.addthis_share === undefined) { window.addthis_share = {"passthrough":{"twitter":{"via":"Bilimorg"}},"url_transforms":{"shorten":{"twitter":"bitly"}},"shorteners":{"bitly":{}}}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":true,"ignore_server_config":true,"ui_atversion":300}; } if (window.addthis_layers === undefined) { window.addthis_layers = {}; } if (window.addthis_layers_tools === undefined) { window.addthis_layers_tools = []; } else {  } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.8","plugin_mode":"WordPress","anonymous_profile_id":"wp-e01883e65eec77101e83246c03364bbd","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+(function() {
+var first_load_interval_id = setInterval(function () {
+if (typeof window.addthis !== 'undefined') {
+window.clearInterval(first_load_interval_id);
+if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+window.addthis.layers(window.addthis_layers);
+}
+if (Array.isArray(window.addthis_layers_tools)) {
+for (i = 0; i < window.addthis_layers_tools.length; i++) {
+window.addthis.layers(window.addthis_layers_tools[i]);
+}
+}
+}
+},1000)
+}());
+      </script>
+      <script async="async" data-cfasync="false" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=wp-e01883e65eec77101e83246c03364bbd" type="text/javascript">
+      </script>
+      <link href="https://www.bilim.org/wp-content/uploads/bilimorg_logo.png" rel="icon" sizes="32x32"/>
+      <link href="https://www.bilim.org/wp-content/uploads/bilimorg_logo.png" rel="icon" sizes="192x192"/>
+      <link href="https://www.bilim.org/wp-content/uploads/bilimorg_logo.png" rel="apple-touch-icon-precomposed"/>
+      <meta content="https://www.bilim.org/wp-content/uploads/bilimorg_logo.png" name="msapplication-TileImage">
+       <script src="https://www.google.com/recaptcha/api.js?render=6LeMIYEUAAAAANpxtDj_hUjTntyL1zaGGCuJqOBh">
+       </script>
+      </meta>
+     </meta>
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body class="post-template-default single single-post postid-19571 single-format-standard header--sticky nav-dropdown-plus nav-scroll-hide">
+  <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+improve your experience.</p> <![endif]-->
+  <div class="wrapper js-wrapper" id="page">
+   ﻿
+   <div class="search__wrapper">
+    <button class="search__close js-search-close">
+    </button>
+    <div class="search__container">
+     <form action="https://www.bilim.org/" class="search-fullscreen" method="get" role="search">
+      <input autocomplete="off" class="search-input js-search-input" name="s" placeholder="Aradığınız şey?" type="text" value=""/>
+      <button class="search-button" id="searchsubmit">
+       <i class="icon icon-search">
+       </i>
+      </button>
+     </form>
+     <hr class="separator"/>
+     <p class="search-description">
+      Arama terimini yukarıya yazıp enter a basınız. Çıkmak için Esc e basın.
+     </p>
+    </div>
+   </div>
+   <header class="site-header">
+    <div class="site-header__wrapper js-sticky">
+     <div class="site-header__container">
+      <div class="header flexbox">
+       <div class="header-component header-component--left">
+        <ul class="nav site-header__menu">
+         <li class="menu-trigger">
+          <a class="js-nav-trigger" href="#">
+           <i class="icon icon-bars">
+           </i>
+          </a>
+         </li>
+         <ul class="nav nav--social" id="menu-widget-social-menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19061" id="menu-item-19061">
+           <a href="https://www.facebook.com/Bilim.org">
+            facebook
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19062" id="menu-item-19062">
+           <a href="https://twitter.com/Bilimorg">
+            twitter
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19063" id="menu-item-19063">
+           <a href="https://www.instagram.com/bilimorg">
+            instagram
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19064" id="menu-item-19064">
+           <a href="https://www.youtube.com/user/Bilimorg">
+            youtube
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19065" id="menu-item-19065">
+           <a href="https://plus.google.com/u/0/b/106280503047638436012/106280503047638436012/posts">
+            gplus
+           </a>
+          </li>
+         </ul>
+        </ul>
+       </div>
+       <div class="header-component header-component--center header-transition--image-to-text">
+        <div class="site-header__branding">
+         <h1 class="site-title site-title--image">
+          <a class="site-logo site-logo--image" href="https://www.bilim.org" rel="home" title="Bilim.org">
+           <img alt="Bilim.org" rel="logo" src="https://www.bilim.org/wp-content/uploads/bilimorg-site-logo.png"/>
+          </a>
+         </h1>
+         <p class="site-header__description">
+          Türkiye'nin Bilim Sitesi
+         </p>
+        </div>
+        <h1 class="site-title site-title--small">
+         <a href="https://www.bilim.org">
+          Bilim.org
+         </a>
+        </h1>
+       </div>
+       <div class="header-component header-component--right">
+        <ul class="nav site-header__menu">
+         <li>
+          <a href="/feed/">
+           <i class="icon-e-rss">
+           </i>
+          </a>
+         </li>
+         <li class="search-trigger">
+          <a class="js-search-trigger" href="#">
+           <i class="icon-e-search">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <nav class="navigation navigation--main" id="js-navigation--main">
+       <h2 class="accessibility">
+        Primary Navigation
+       </h2>
+       <ul class="nav--main" id="menu-ust-menu">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81" id="menu-item-81">
+         <a href="/">
+          Ana Sayfa
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-78" id="menu-item-78">
+         <a href="https://www.bilim.org/bilim/haberler/">
+          Haberler
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75" id="menu-item-75">
+         <a href="https://www.bilim.org/bilim/yazilar/">
+          Yazılar
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item hidden menu-item-15651" id="menu-item-15651">
+         <a>
+          Hakkımızda
+         </a>
+         <ul class="sub-menu">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15716" id="menu-item-15716">
+           <a href="https://www.bilim.org/ekibimiz/">
+            Ekibimiz
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15653" id="menu-item-15653">
+           <a href="/bilim-org-yazar-adaylari-ariyor/">
+            Yazarlık Başvurusu
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15718" id="menu-item-15718">
+           <a href="https://www.bilim.org/basinda-bilim-org/">
+            Basında Bilim.org
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15652" id="menu-item-15652">
+         <a href="/iletisim">
+          İletişim
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </div>
+   </header>
+   <div class="container js-container">
+    <section class="content">
+     <div class="page-content single-content has-sidebar">
+      <div class="page-content__wrapper">
+       <article class="article-single single-post has-thumbnail post-19571 post type-post status-publish format-standard has-post-thumbnail hentry category-bilim-genel category-fizik category-haberler category-matematik tag-amper tag-kelvin tag-kilogram tag-kilogram-tanimi tag-mol" itemscope="" itemtype="http://schema.org/Article">
+        ﻿
+        <div style="text-align:center; margin-bottom:10px; margin-top:-15px;">
+         <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+         </script>
+         <ins class="adsbygoogle" data-ad-client="ca-pub-1335919035760324" data-ad-slot="1036711504" style="display:inline-block;width:728px;height:90px">
+         </ins>
+         <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+        </div>
+        <header class="article__header">
+         <div class="article__featured-image" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+          <img alt="Kilogram, amper, kelvin ve mol yeniden tanımlandı" itemprop="url" sizes="(max-width: 600px) 99vw, (max-width: 900px) 98vw, 888px" src="https://www.bilim.org/wp-content/uploads/prototype_kilogram_replica_web_1024-1024x415.jpg" srcset="https://www.bilim.org/wp-content/uploads/prototype_kilogram_replica_web_1024.jpg 1024w, https://www.bilim.org/wp-content/uploads/prototype_kilogram_replica_web_1024-400x162.jpg 400w"/>
+          <meta content="1024" itemprop="width"/>
+          <meta content="415" itemprop="height"/>
+         </div>
+         <div class="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a class="home" href="https://www.bilim.org" itemprop="url">
+           <span itemprop="title">
+            Home
+           </span>
+          </a>
+          <span class="separator">
+          </span>
+          <div class="cat-item cat-item-133" itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+           <a href="https://www.bilim.org/bilim/bilim-genel/" itemprop="url" title="View all posts filed under Bilim Genel">
+            <span itemprop="title">
+             Bilim Genel
+            </span>
+           </a>
+          </div>
+          <span class="cat-separator">
+          </span>
+          <div class="cat-item cat-item-31" itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+           <a href="https://www.bilim.org/bilim/fizik/" itemprop="url" title="View all posts filed under Fizik">
+            <span itemprop="title">
+             Fizik
+            </span>
+           </a>
+          </div>
+          <span class="cat-separator">
+          </span>
+          <div class="cat-item cat-item-4" itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+           <a href="https://www.bilim.org/bilim/haberler/" itemprop="url" title="View all posts filed under Haberler">
+            <span itemprop="title">
+             Haberler
+            </span>
+           </a>
+          </div>
+          <span class="cat-separator">
+          </span>
+          <div class="cat-item cat-item-33" itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+           <a href="https://www.bilim.org/bilim/matematik/" itemprop="url" title="View all posts filed under Matematik">
+            <span itemprop="title">
+             Matematik
+            </span>
+           </a>
+          </div>
+          <span class="separator">
+          </span>
+         </div>
+         <h1 class="article__title entry-title" itemprop="name headline mainEntityOfPage">
+          Kilogram, amper, kelvin ve mol yeniden tanımlandı
+         </h1>
+         <hr class="separator"/>
+         <div class="entry__meta--header">
+          <div class="post-meta">
+           <div>
+            <span class="article__author-name" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+             <address class="vcard author">
+              <a class="url fn" href="https://www.bilim.org/author/nurhankarahan/" itemprop="name" title="Posts by Canan Nurhan Karahan">
+               Canan Nurhan Karahan
+              </a>
+             </address>
+             .
+            </span>
+            <time class="article__time" datetime="2018-12-02T16:59:04+00:00" itemprop="datePublished">
+             <span>
+              <abbr class="published" title="2018-12-02T16:59:04+00:00">
+               02 Aralık 2018
+              </abbr>
+              .
+             </span>
+            </time>
+            <time class="updated" datetime="2018-12-02T17:23:01+00:00" itemprop="dateModified">
+             02 Aralık 2018
+            </time>
+            <a class="article__comments-number" href="#comments">
+             0
+            </a>
+           </div>
+           <div addthis:description="60 ülkeden temsilciler, bir dönüm noktası kararı olan, dünyaca kullanılan kilogram, amper, kelvin ve mol tanımlarının değiştirilerek  Uluslararası Birimler Sisteminin (SI) yeniden tanımlanmasına oy verdiler. Uluslararası Ağırlıklar ve Ölçüler Bürosu (BIPM) tarafından düzenlenen ve Fransa’nın Versailles kentinde gerçekleştirilen Genel Ağırlıklar ve Ölçüler Konferansı’nda alınan karar, tüm SI birimlerinin artık doğal dünyayı tanımlayan sabitler tarafından tanımlanacağı anlamına geliyor. Bu, SI’nın gelecekteki istikrarını sağlayacak ve tanımları uygulamak için kuantum teknolojileri de dahil olmak üzere yeni teknolojilerin kullanımına fırsat tanıyacaktır. 20 Mayıs 2019’da yürürlüğe girecek olan değişiklikler, ölçü birimlerini tanımlamak için fiziksel nesnelerin kullanımına son verecek. Kilogramın (IPK) tanımı olarak, Fransa’daki BIPM’de 130 yıldan uzun bir süredir depolanan platin alaşımı silindiri artık emekli olacak ve yerini  kuantum fiziğinin temel sabiti olan Planck sabitine bırakacak. IPK’nın istikrarı, zor ve potansiyel olarak yanlış bir süreç olmasına rağmen sadece aynı kopyalarla kıyaslandığında doğrulanabilirken, Planck sabiti her.." addthis:title="Kilogram, amper, kelvin ve mol yeniden tanımlandı | Bilim.org" addthis:url="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/" class="addthis_toolbox addthis_default_style addthis_32x32_style add_this_list">
+            <a class="addthis_button_compact">
+            </a>
+            <a class="addthis_button_preferred_1">
+            </a>
+            <a class="addthis_button_preferred_2">
+            </a>
+            <a class="addthis_button_preferred_3">
+            </a>
+            <a class="addthis_button_preferred_4">
+            </a>
+           </div>
+          </div>
+         </div>
+        </header>
+        <section class="article__content entry-content js-post-gallery" itemprop="articleBody">
+         <div class="at-above-post addthis_tool" data-url="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/">
+         </div>
+         <p>
+          60 ülkeden temsilciler, bir dönüm noktası kararı olan, dünyaca kullanılan kilogram, amper, kelvin ve mol tanımlarının değiştirilerek  Uluslararası Birimler Sisteminin (SI) yeniden tanımlanmasına oy verdiler.
+          <span id="more-19571">
+          </span>
+         </p>
+         <p>
+          Uluslararası Ağırlıklar ve Ölçüler Bürosu (BIPM) tarafından düzenlenen ve Fransa’nın Versailles kentinde gerçekleştirilen Genel Ağırlıklar ve Ölçüler Konferansı’nda alınan karar, tüm SI birimlerinin artık doğal dünyayı tanımlayan sabitler tarafından tanımlanacağı anlamına geliyor. Bu, SI’nın gelecekteki istikrarını sağlayacak ve tanımları uygulamak için kuantum teknolojileri de dahil olmak üzere yeni teknolojilerin kullanımına fırsat tanıyacaktır. 20 Mayıs 2019’da yürürlüğe girecek olan değişiklikler, ölçü birimlerini tanımlamak için fiziksel nesnelerin kullanımına son verecek.
+         </p>
+         <p>
+          Kilogramın (IPK) tanımı olarak,
+          <strong>
+           Fransa’daki BIPM’de 130 yıldan uzun bir süredir depolanan platin alaşımı silindiri artık emekli olacak ve yerini  kuantum fiziğinin temel sabiti olan Planck sabitine bırakacak
+          </strong>
+          . IPK’nın istikrarı, zor ve potansiyel olarak yanlış bir süreç olmasına rağmen sadece aynı kopyalarla kıyaslandığında doğrulanabilirken, Planck sabiti her yerde ve her zaman kullanıma hazır olacak.
+         </p>
+         <p>
+          Uluslararası Ağırlıklar ve Ölçüler Bürosu Direktörü Martin Milton,
+          <em>
+           “SI’nın yeniden tanımı, bilimsel ilerlemede bir dönüm noktasıdır. Doğada kütle ve zaman gibi önemli kavramlar için temel olarak gözlemlediğimiz sabitleri kullanmak bilimsel anlayışımızı geliştirmek, yeni teknolojiler geliştirmek ve toplumun en büyük zorluklarını ele almak için kararlı bir temele sahip olduğumuz anlamına gelir.”
+          </em>
+          dedi.
+         </p>
+         <p>
+          Uluslararası Ağırlıklar ve Ölçüler Komitesi Müdürü Barry Inglis,
+          <em>
+           “Bugün, dünya çapında ölçüm bilimciler tarafından yapılan onlarca yıllık çalışmaların doruk noktasını işaret ediyor, bunun önemi büyük. Artık, dünyada yapılan ölçümlerde nesnelerin sınırlamalarına bağlı kalmamakla birlikte daha da fazla doğruluğa yol açabilecek ve hatta bilimsel ilerlemeyi hızlandırabilecek evrenselliğe sahip birimlere sahip olacağız.”
+          </em>
+          dedi.
+         </p>
+         <p>
+          Yeni tanımlar, SI’nın yedi temel biriminin dördünü etkilemektedir: kilogram, amper, kelvin ve mol; ve volt, ohm ve joule gibi onlardan türeyen tüm birimler.
+         </p>
+         <ul>
+          <li>
+           Kilogram – Planck sabiti (
+           <em>
+            h
+           </em>
+           ) ile tanımlanacaktır
+          </li>
+          <li>
+           Amper – temel elektrik yükü (
+           <em>
+            e
+           </em>
+           ) ile tanımlanacaktır
+          </li>
+          <li>
+           Kelvin – Boltzmann sabiti (
+           <em>
+            k
+           </em>
+           ) ile tanımlanacaktır
+          </li>
+          <li>
+           Mol – Avogadro sabiti (
+           <em>
+            N
+           </em>
+           <sub>
+            A
+           </sub>
+           ) ile tanımlanacaktır
+          </li>
+         </ul>
+         <p>
+          Bu birimlerin büyüklükleri değişmeyecek olsa da (kilogram bir kilogram olacaktır), yeniden tanımlanmış dört birim, SI temel birimlerinin hem kararlı hem de faydalı olmaya devam etmesini sağlamak için saniye, metre ve kandelaya katılacaktır.  Tıpkı 1967’de saniyenin yeniden tanımlanmasının dünya genelinde GPS ve internet aracılığıyla kurulan iletişim  teknolojisinin temelini oluşturması gibi yeni değişikliklerin de bilim, teknoloji, ticaret, sağlık ve çevre  üzerinde geniş kapsamlı etkileri olacaktır.
+         </p>
+         <p>
+         </p>
+         <p>
+          <strong>
+           Kaynak :
+          </strong>
+          National Physical Laboratory.
+          <a href="https://www.sciencedaily.com/releases/2018/11/181116115556.htm" rel="noopener" target="_blank">
+           “Kilogram, ampere, kelvin and mole redefined: International System of Units overhauled in historic vote.” ScienceDaily
+          </a>
+          . ScienceDaily, 16 November 2018.
+         </p>
+         <div class="at-below-post addthis_tool" data-url="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/">
+         </div>
+        </section>
+        ﻿
+        <footer class="article__footer push--bottom">
+         <div class="meta--categories btn-list meta-list">
+          <span class="btn btn--small btn--secondary list-head">
+           Kategoriler
+          </span>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/bilim/bilim-genel/" rel="tag" title="View all posts in Bilim Genel">
+           Bilim Genel
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/bilim/fizik/" rel="tag" title="View all posts in Fizik">
+           Fizik
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/bilim/haberler/" rel="tag" title="View all posts in Haberler">
+           Haberler
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/bilim/matematik/" rel="tag" title="View all posts in Matematik">
+           Matematik
+          </a>
+         </div>
+         <div class="meta--tags btn-list meta-list">
+          <span class="btn btn--small btn--secondary list-head">
+           Etiketler
+          </span>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/tag/amper/" rel="tag" title="Etiketli tüm gönderileri göster amper">
+           amper
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/tag/kelvin/" rel="tag" title="Etiketli tüm gönderileri göster kelvin">
+           kelvin
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/tag/kilogram/" rel="tag" title="Etiketli tüm gönderileri göster kilogram">
+           kilogram
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/tag/kilogram-tanimi/" rel="tag" title="Etiketli tüm gönderileri göster kilogram tanımı">
+           kilogram tanımı
+          </a>
+          <a class="btn btn--small btn--tertiary" href="https://www.bilim.org/tag/mol/" rel="tag" title="Etiketli tüm gönderileri göster mol">
+           mol
+          </a>
+         </div>
+         <hr class="separator"/>
+         <div class="post-meta">
+          <div addthis:description="60 ülkeden temsilciler, bir dönüm noktası kararı olan, dünyaca kullanılan kilogram, amper, kelvin ve mol tanımlarının değiştirilerek  Uluslararası Birimler Sisteminin (SI) yeniden tanımlanmasına oy verdiler. Uluslararası Ağırlıklar ve Ölçüler Bürosu (BIPM) tarafından düzenlenen ve Fransa’nın Versailles kentinde gerçekleştirilen Genel Ağırlıklar ve Ölçüler Konferansı’nda alınan karar, tüm SI birimlerinin artık doğal dünyayı tanımlayan sabitler tarafından tanımlanacağı anlamına geliyor. Bu, SI’nın gelecekteki istikrarını sağlayacak ve tanımları uygulamak için kuantum teknolojileri de dahil olmak üzere yeni teknolojilerin kullanımına fırsat tanıyacaktır. 20 Mayıs 2019’da yürürlüğe girecek olan değişiklikler, ölçü birimlerini tanımlamak için fiziksel nesnelerin kullanımına son verecek. Kilogramın (IPK) tanımı olarak, Fransa’daki BIPM’de 130 yıldan uzun bir süredir depolanan platin alaşımı silindiri artık emekli olacak ve yerini  kuantum fiziğinin temel sabiti olan Planck sabitine bırakacak. IPK’nın istikrarı, zor ve potansiyel olarak yanlış bir süreç olmasına rağmen sadece aynı kopyalarla kıyaslandığında doğrulanabilirken, Planck sabiti her.." addthis:title="Kilogram, amper, kelvin ve mol yeniden tanımlandı | Bilim.org" addthis:url="https://www.bilim.org/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/" class="addthis_toolbox addthis_default_style addthis_32x32_style add_this_list">
+           <a class="addthis_button_compact">
+           </a>
+           <a class="addthis_button_preferred_1">
+           </a>
+           <a class="addthis_button_preferred_2">
+           </a>
+           <a class="addthis_button_preferred_3">
+           </a>
+           <a class="addthis_button_preferred_4">
+           </a>
+          </div>
+         </div>
+         <aside class="author-box" itemscope="" itemtype="http://schema.org/Person">
+          <div class="author__avatar">
+           <img alt="avatar" itemprop="image" src="https://secure.gravatar.com/avatar/287e78e9bf5245c1b5583c89fb092389?s=80&amp;r=g"/>
+          </div>
+          <div class="author__text">
+           <div class="author__title">
+            <h3 class="accessibility">
+             Author
+            </h3>
+            <h4>
+             <span itemprop="name">
+              <a href="https://www.bilim.org/author/nurhankarahan/" title="Posts by Canan Nurhan Karahan">
+               Canan Nurhan Karahan
+              </a>
+             </span>
+            </h4>
+           </div>
+           <p class="author__bio" itemprop="description">
+           </p>
+           <ul class="author__social-links">
+           </ul>
+          </div>
+         </aside>
+        </footer>
+        <div class="yarpp-related">
+         <h3>
+          İlginizi çekebilir:
+         </h3>
+         <div class="yarpp-thumbnails-horizontal">
+          <a class="yarpp-thumbnail" href="https://www.bilim.org/bilim-adamlari-sonunda-bir-kilogramin-kutlesi-konusunda-anlasmaya-vardi/" title="Bilim adamları sonunda bir kilogramın kütlesi konusunda anlaşmaya vardı">
+           <img alt="" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" height="150" src="https://www.bilim.org/wp-content/uploads/prototype_kilogram_replica_web_1024-230x150.jpg" width="230"/>
+           <span class="yarpp-thumbnail-title">
+            Bilim adamları sonunda bir kilogramın kütlesi konusunda anlaşmaya vardı
+           </span>
+          </a>
+         </div>
+        </div>
+        ﻿
+        <div class="comments-area no-comments" id="comments">
+         <div class="comments-area-title">
+          <h3>
+           <span class="comment-number total">
+            +
+           </span>
+           Yorum bulunmuyor
+          </h3>
+          <a class="comments_add-comment" href="#reply-title">
+           Yorum ekle
+          </a>
+         </div>
+        </div>
+        <div class="comment-respond" id="respond">
+         <h3 class="comment-reply-title" id="reply-title">
+          <small>
+           <a href="/kilogram-amper-kelvin-ve-mol-yeniden-tanimlandi/#respond" id="cancel-comment-reply-link" rel="nofollow" style="display:none;">
+            Cevabı iptal et
+           </a>
+          </small>
+         </h3>
+         <form action="https://www.bilim.org/wp-comments-post.php" class="comment-form" id="commentform" method="post">
+          <p class="comment-form-comment">
+           <label class="show-on-ie8" for="comment">
+            Yorum
+           </label>
+           <textarea aria-required="true" cols="45" id="comment" name="comment" placeholder="Your thoughts.." rows="8"></textarea>
+          </p>
+          <p class="comment-form-author">
+           <label class="show-on-ie8" for="author">
+            Name
+           </label>
+           <input aria-required="true" id="author" name="author" placeholder="Ad..." size="30" type="text" value=""/>
+          </p>
+          <p class="comment-form-email">
+           <label class="show-on-ie8" for="name">
+            Email
+           </label>
+           <input aria-required="true" id="email" name="email" placeholder="eposta@adresiniz.com..." size="30" type="text" value=""/>
+          </p>
+          <p class="comment-form-url">
+           <label class="show-on-ie8" for="url">
+            Url
+           </label>
+           <input id="url" name="url" placeholder="Websitesi..." size="30" type="text" value=""/>
+          </p>
+          <p class="form-submit">
+           <input class="submit" id="comment-submit" name="submit" type="submit" value="Gönder">
+            <input id="comment_post_ID" name="comment_post_ID" type="hidden" value="19571"/>
+            <input id="comment_parent" name="comment_parent" type="hidden" value="0"/>
+           </input>
+          </p>
+          <p style="display: none;">
+           <input id="akismet_comment_nonce" name="akismet_comment_nonce" type="hidden" value="79ad943504"/>
+          </p>
+          <p style="display: none;">
+           <input id="ak_js" name="ak_js" type="hidden" value="25"/>
+          </p>
+         </form>
+        </div>
+       </article>
+      </div>
+     </div>
+     <aside class="sidebar sidebar--main">
+      <div class="widget widget--sidebar-blog widget_text" id="text-2">
+       <div class="textwidget">
+        <script type="text/javascript">
+         google_ad_client = "ca-pub-1335919035760324";
+/* Bilim.org 300x250 */
+google_ad_slot = "3817351025";
+google_ad_width = 300;
+google_ad_height = 250;
+        </script>
+        <script src="https://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+        </script>
+       </div>
+      </div>
+      <div class="widget widget--sidebar-blog widget_categories" id="categories-2">
+       <h3 class="widget__title widget--sidebar-blog__title">
+        Kategoriler
+       </h3>
+       <form action="https://www.bilim.org" method="get">
+        <label class="screen-reader-text" for="cat">
+         Kategoriler
+        </label>
+        <select class="postform" id="cat" name="cat">
+         <option value="-1">
+          Kategori seçin
+         </option>
+         <option class="level-0" value="2491">
+          Antropoloji
+         </option>
+         <option class="level-0" value="12">
+          Astronomi
+         </option>
+         <option class="level-0" value="133">
+          Bilim Genel
+         </option>
+         <option class="level-0" value="79">
+          Bilim.org
+         </option>
+         <option class="level-0" value="13">
+          Bilimkurgu
+         </option>
+         <option class="level-0" value="14">
+          Bilişim
+         </option>
+         <option class="level-0" value="30">
+          Biyoloji
+         </option>
+         <option class="level-0" value="61">
+          Çevre
+         </option>
+         <option class="level-0" value="205">
+          Coğrafya
+         </option>
+         <option class="level-0" value="19">
+          Dilbilim
+         </option>
+         <option class="level-0" value="15">
+          Eğitim
+         </option>
+         <option class="level-0" value="2141">
+          Enerji
+         </option>
+         <option class="level-0" value="7">
+          Etkinlikler
+         </option>
+         <option class="level-0" value="20">
+          Felsefe
+         </option>
+         <option class="level-0" value="31">
+          Fizik
+         </option>
+         <option class="level-0" value="4">
+          Haberler
+         </option>
+         <option class="level-0" value="35">
+          Hayvanlar Alemi
+         </option>
+         <option class="level-0" value="59">
+          İklimbilim
+         </option>
+         <option class="level-0" value="29">
+          Kimya
+         </option>
+         <option class="level-0" value="33">
+          Matematik
+         </option>
+         <option class="level-0" value="2492">
+          Paleontoloji
+         </option>
+         <option class="level-0" value="18">
+          Psikoloji
+         </option>
+         <option class="level-0" value="2288">
+          Röportajlar
+         </option>
+         <option class="level-0" value="32">
+          Sağlık Bilimleri
+         </option>
+         <option class="level-0" value="17">
+          Sosyoloji
+         </option>
+         <option class="level-0" value="2989">
+          Spor
+         </option>
+         <option class="level-0" value="16">
+          Tarih
+         </option>
+         <option class="level-0" value="34">
+          Tasarım-Mühendislik
+         </option>
+         <option class="level-0" value="38">
+          Teknoloji
+         </option>
+         <option class="level-0" value="36">
+          Türkiye’de Bilim
+         </option>
+         <option class="level-0" value="5">
+          Yazılar
+         </option>
+         <option class="level-0" value="60">
+          Yer Bilimleri
+         </option>
+        </select>
+       </form>
+       <script type="text/javascript">
+        (function() {
+var dropdown = document.getElementById( "cat" );
+function onCatChange() {
+if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+dropdown.parentNode.submit();
+}
+}
+dropdown.onchange = onCatChange;
+})();
+       </script>
+      </div>
+      <div class="widget widget--sidebar-blog widget_text" id="text-8">
+       <h3 class="widget__title widget--sidebar-blog__title">
+        SOSYAL MEDYA
+       </h3>
+       <div class="textwidget">
+        <p style="margin-bottom:2px;">
+         <a class="twitter-follow-button" data-show-count="true" data-size="large" href="https://twitter.com/Bilimorg">
+          Follow @Bilimorg
+         </a>
+         <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+         </script>
+        </p>
+        <div class="fb-like" data-action="like" data-href="https://www.facebook.com/Bilim.org" data-layout="standard" data-share="false" data-show-faces="false" data-width="300">
+        </div>
+       </div>
+      </div>
+      <div class="widget widget--sidebar-blog widget_text" id="text-6">
+       <div class="textwidget">
+        <p style="margin-bottom:2px;">
+         <a href="https://www.bilim.org/bilim-org-yazar-adaylari-ariyor/">
+          <img alt="Bilim.org Yazarlık Başvurusu" src="https://www.bilim.org/wp-content/uploads/sag-menu-yazarlik-basvurusu.jpg" style="border:0px; width:300px; hegiht: 75px;"/>
+         </a>
+        </p>
+       </div>
+      </div>
+      <div class="widget widget--sidebar-blog widget_mc4wp_form_widget" id="mc4wp_form_widget-3">
+       <h3 class="widget__title widget--sidebar-blog__title">
+        E-Bülten
+       </h3>
+       <script>
+        (function() {
+if (!window.mc4wp) {
+window.mc4wp = {
+listeners: [],
+forms    : {
+on: function (event, callback) {
+window.mc4wp.listeners.push({
+event   : event,
+callback: callback
+});
+}
+}
+}
+}
+})();
+       </script>
+       <form class="mc4wp-form mc4wp-form-17446 mc4wp-form-theme mc4wp-form-theme-blue" data-id="17446" data-name="Varsayılan Kayıt Formu" id="mc4wp-form-1" method="post">
+        <div class="mc4wp-form-fields">
+         <div style="height:25px;">
+          <div style="float:left">
+           <input id="mc4wp_email" name="EMAIL" placeholder="Yeni yazılardan haberdar ol" required="" style="width:230px;" type="email"/>
+          </div>
+          <div style="float:left; margin-left:3px">
+           <input type="submit" value="Kaydol"/>
+          </div>
+         </div>
+        </div>
+        <label style="display: none !important;">
+         Leave this field empty if you're human:
+         <input autocomplete="off" name="_mc4wp_honeypot" tabindex="-1" type="text" value=""/>
+        </label>
+        <input name="_mc4wp_timestamp" type="hidden" value="1545309246"/>
+        <input name="_mc4wp_form_id" type="hidden" value="17446"/>
+        <input name="_mc4wp_form_element_id" type="hidden" value="mc4wp-form-1"/>
+        <div class="mc4wp-response">
+        </div>
+       </form>
+      </div>
+      <div class="widget widget--sidebar-blog widget_text" id="text-5">
+       <div class="textwidget">
+        <a class="twitter-timeline" data-widget-id="568247187029491712" href="https://twitter.com/search?q=%40bilimorg">
+         @bilimorg hakkındaki Tweetler
+        </a>
+        <script>
+         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+       </div>
+      </div>
+     </aside>
+    </section>
+    <footer class="site-footer">
+     <h2 class="accessibility">
+     </h2>
+     <div class="footer-menu">
+      <nav class="navigation navigation--footer">
+       <ul class="footer-menu nav nav--main" id="menu-alt-menu">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15640" id="menu-item-15640">
+         <a href="http://www.bilim.org/ekibimiz">
+          Ekibimiz
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15643" id="menu-item-15643">
+         <a href="http://www.bilim.org/bilim-org-yazar-adaylari-ariyor/">
+          Yazarlık Başvurusu
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15641" id="menu-item-15641">
+         <a href="http://www.bilim.org/iletisim">
+          İletişim
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <div class="copyright-tex">
+      <span>
+       <div style="text-align:center;font-size:10pt">
+        <strong>
+         Yasal Uyarı:
+        </strong>
+        Bilim.org'da yer alan yazılar izin alınmadan veya kaynak göstermeksizin kullanılamaz.
+        <br/>
+        Sunucularımız
+        <a href="http://www.dgn.net.tr/" target="_blank">
+         <img src="/wp-content/uploads/dgnteknoloji_logo.png" style="border:0px"/>
+        </a>
+        tarafından sağlanmaktadır.
+       </div>
+      </span>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script>
+   (function() {function addEventListener(element,event,handler) {
+if(element.addEventListener) {
+element.addEventListener(event,handler, false);
+} else if(element.attachEvent){
+element.attachEvent('on'+event,handler);
+}
+}function maybePrefixUrlField() {
+if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+this.value = "http://" + this.value;
+}
+}
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+for( var j=0; j < urlFields.length; j++ ) {
+addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+/* add placeholder & pattern to all date fields */
+var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+for(var i=0; i<dateFields.length; i++) {
+if(!dateFields[i].placeholder) {
+dateFields[i].placeholder = 'YYYY-MM-DD';
+}
+if(!dateFields[i].pattern) {
+dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+}
+}
+}
+})();
+  </script>
+  <link href="//www.bilim.org/wp-content/cache/wpfc-minified/f5q13brc/e773o.css" id="yarpp-thumbnails-yarpp-thumbnail-css" media="all" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var wpcf7 = {"apiSettings":{"root":"https:\/\/www.bilim.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+  </script>
+  <script type="text/javascript">
+   var viewsCacheL10n = {"admin_ajax_url":"https:\/\/www.bilim.org\/wp-admin\/admin-ajax.php","post_id":"19571"};
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeMIYEUAAAAANpxtDj_hUjTntyL1zaGGCuJqOBh&amp;ver=3.0" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var objectl10n = {"tPrev":"\u00d6nceki (Left arrow key)","tNext":"Sonraki (Right arrow key)","tCounter":"of","infscrLoadingText":"","infscrReachedEnd":""};
+  </script>
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#async=1" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var mc4wp_forms_config = [];
+  </script>
+  <!--[if lte IE 9]> <script type='text/javascript' src='https://www.bilim.org/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.3.2'></script> <![endif]-->
+  <script type="text/javascript">
+   ( function( grecaptcha, sitekey ) {
+var wpcf7recaptcha = {
+execute: function() {
+grecaptcha.execute(
+sitekey,
+{ action: 'homepage' }
+).then( function( token ) {
+var forms = document.getElementsByTagName( 'form' );
+for ( var i = 0; i < forms.length; i++ ) {
+var fields = forms[ i ].getElementsByTagName( 'input' );
+for ( var j = 0; j < fields.length; j++ ) {
+var field = fields[ j ];
+if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+field.setAttribute( 'value', token );
+break;
+}
+}
+}
+} );
+}
+};
+grecaptcha.ready( wpcf7recaptcha.execute );
+document.addEventListener( 'wpcf7submit', wpcf7recaptcha.execute, false );
+} )( grecaptcha, '6LeMIYEUAAAAANpxtDj_hUjTntyL1zaGGCuJqOBh' );
+  </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1256315-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-1256315-1');
+  </script>
+  <script>
+   grecaptcha.ready(function() {
+grecaptcha.execute('6LeMIYEUAAAAANpxtDj_hUjTntyL1zaGGCuJqOBh', {action: 'action_name'})
+.then(function(token) {
+// Verify the token on the server.
+});
+});
+  </script>
+  <script defer="" src="https://www.bilim.org/wp-content/cache/autoptimize/js/autoptimize_bd22b80470323e1968705f3917958272.js" type="text/javascript">
+  </script>
+ </body>
+</html>
+<!-- WP Fastest Cache file was created in 0.63004302978516 seconds, on 20-12-18 15:34:06 -->
