@@ -109,7 +109,7 @@ class Test_SayfaGetir():
         if "veri" in sorgu:
             assert sorgu == {"veri","43"}
 
-    def test_database_get(self):
+    def test_database_get(self):         # veritabanını test eder
         orn=Veritabani()
         orn.sayfa_ekle(({"veri","43"}))
         sayfa=orn.sayfa_getir("veri")
