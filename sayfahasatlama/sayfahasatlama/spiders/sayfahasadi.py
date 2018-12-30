@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from sayfascrap.sayfahasat.sayfahasat.items import SayfahasatItem
+from sayfahasatlama.sayfahasatlama.items import SayfahasatItem
+from scrapy import Selector
 
 class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
