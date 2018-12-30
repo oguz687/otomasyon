@@ -10,5 +10,6 @@ from scrapy.item import Item, Field
 
 
 class SayfahasatItem(Item):
+    _id = Field()
     title = Field()
     url = Field()

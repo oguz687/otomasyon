@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for sayfahasat project
+# Scrapy settings for sayfahasatlama project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'sayfahasat'
+BOT_NAME = 'sayfahasatlama'
 
-SPIDER_MODULES = ['sayfahasat.spiders']
-NEWSPIDER_MODULE = 'sayfahasat.spiders'
+SPIDER_MODULES = ['sayfahasatlama.spiders']
+NEWSPIDER_MODULE = 'sayfahasatlama.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'sayfahasat (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'sayfahasat.middlewares.SayfahasatSpiderMiddleware': 543,
+#    'sayfahasatlama.middlewares.SayfahasatlamaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'sayfahasat.middlewares.SayfahasatDownloaderMiddleware': 543,
+#    'sayfahasatlama.middlewares.SayfahasatlamaDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,11 +64,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'sayfahasat.pipelines.SayfahasatPipeline': 300,}
+ITEM_PIPELINES = {'sayfahasatlama.pipelines.SayfahasatPipeline': 300,}
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"
-MONGODB_COLLECTION = "questions"
+MONGODB_COLLECTION = "sayfalar1"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
