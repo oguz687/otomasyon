@@ -5,13 +5,9 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-
 import pymongo
-
 from scrapy.conf import settings
 from scrapy.exceptions import DropItem
-from scrapy import log
-
 
 class SayfahasatPipeline(object):
 
@@ -31,6 +27,4 @@ class SayfahasatPipeline(object):
                 raise DropItem("Missing {0}!".format(data))
         if valid:
             self.collection.insert(dict(item))
-            log.msg("Question added to MongoDB database!",
-                    level=log.DEBUG, spider=spider)
         return item
