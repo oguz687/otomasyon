@@ -31,6 +31,6 @@ if __name__ == "__main__":
     process = CrawlerProcess(get_project_settings())
     process.crawl(Sayfahasadı)
     process.start()
-else:
-    from sayfahasatlama.items import SayfahasatItem
+# else:
+#     from sayfahasatlama.items import SayfahasatItem
 
