@@ -68,7 +68,7 @@ ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"
-MONGODB_COLLECTION = "sayfalarww"
+MONGODB_COLLECTION = "sayfalars"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
