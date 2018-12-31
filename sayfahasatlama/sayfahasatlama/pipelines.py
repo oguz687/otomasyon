@@ -6,18 +6,21 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import pymongo
-from scrapy.conf import settings
+from scrapy.crawler import Settings
+# from scrapy.conf import settings
 from scrapy.exceptions import DropItem
+from scrapy.utils.project import get_project_settings
 
 class SayfahasatPipeline(object):
 
     def __init__(self):
+        SETTINGS = get_project_settings()
         connection = pymongo.MongoClient(
-            settings['MONGODB_SERVER'],
-            settings['MONGODB_PORT']
+            SETTINGS['MONGODB_SERVER'],
+            SETTINGS['MONGODB_PORT']
         )
-        db = connection[settings['MONGODB_DB']]
-        self.collection = db[settings['MONGODB_COLLECTION']]
+        db = connection[SETTINGS['MONGODB_DB']]
+        self.collection = db[SETTINGS['MONGODB_COLLECTION']]
 
     def process_item(self, item, spider):
         valid = True
