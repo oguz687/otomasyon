@@ -28,7 +28,7 @@ class Sayfahasadı(scrapy.Spider):
                 next_page = response.urljoin(str(i))
                 yield scrapy.Request(next_page, callback=self.parse_item)
 
-    def parse_item(self,response):
+    def parse_item(self, response):
         altsayfalar = Selector(response).xpath('//*[@id="articleBody"]')
         item = SayfahasatItem()
         for altsayfa in altsayfalar:
