@@ -23,13 +23,13 @@ class SayfahasatPipeline(object):
         self.collection = db[SETTINGS['MONGODB_COLLECTION'][0]]
 
     def process_item(self, item, spider):
-        self.valid = True
+        self.valid1 = True
         if spider.name == "sayfaspider":
             for data in item:
                 if not data:
-                    self.valid = False
+                    self.valid1 = False
                     raise DropItem("Missing {0}!".format(data))
-            if self.valid:
+            if self.valid1:
                 self.collection.insert(dict(item))
                 return item
         else:

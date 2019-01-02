@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 700,
-                  'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 800,
-                   }
+ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 200,
+                  'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 300,
+                 }
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"

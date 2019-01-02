@@ -16,8 +16,8 @@ class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
     allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
     start_urls=[]
-    for sayı in range(2):
-        start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayı)
+    for sayi in range(2):
+        start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayi)
 
     def parse(self, response):
         altsayfalar = Selector(response).xpath('//*[@class="infinite-item"]')
@@ -28,25 +28,12 @@ class Sayfahasadı(scrapy.Spider):
             item["title"] = altsayfa.xpath('.//a//div[@class="title"]//text()').extract()
             item["summary"] = altsayfa.xpath('.//a//div[@class="summary"]//text()').extract()
 
-        yield item
-    #     if itemtemp is not None:
-    #         for i in itemtemp:
-    #             next_page = response.urljoin(str(i))
-    #             yield scrapy.Request(next_page, callback=self.parse_item)
-    #
-    # def parse_item(self, response):
-    #     altsayfalar = Selector(response).xpath('//*[@id="articleBody"]')
-    #     item = SayfahasatItem()
-    #     for altsayfa in altsayfalar:
-    #         item["sayfa"] = altsayfa.xpath('//p//text()').extract()
-    #
-    #         yield item
+            yield item
+
 
 class Sayfagiris(scrapy.Spider):
     name="sayfagiris"
-    # custom_settings = {
-    #     'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 600,
-    # }
+    custom_settings={}
     allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
     start_urls = []
     orn = Veritabani()
@@ -55,13 +42,18 @@ class Sayfagiris(scrapy.Spider):
     urllist = sorgu.distinct("url")
     for url in urllist:
         start_urls.append(url)
+    if len(urllist) != 0:
+        custom_setting = {"ITEM_PIPELINES": {'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 100,}
+        }
+        custom_settings.update(custom_setting)
+
 
     def parse(self, response):
         sayfalar = Selector(response).xpath('//div[@class="news-content"]')
         item = SayfahasatItem()
         for sayfa in sayfalar:
             item["sayfa"] = sayfa.xpath('.//p//text()').extract()
-        yield item
+            yield item
 
 
 
