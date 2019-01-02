@@ -5,24 +5,29 @@ from scrapy.utils.project import get_project_settings
 from scrapy import Selector
 from scrapy.settings import Settings
 from scrapy.http import Request
+# from twisted.internet import reactor, defer
+# from scrapy.crawler import CrawlerRunner
+# from scrapy.utils.log import configure_logging
+
+from otomasyondb import Veritabani
 
 
 class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
-    allowed_domains = ["sabah.com.tr", ]
-    start_urls = ["https://www.sabah.com.tr/ekonomi/",
-                  "https://www.sabah.com.tr/ekonomi/2/", ]
-
+    allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
+    start_urls=[]
+    for sayı in range(2):
+        start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayı)
 
     def parse(self, response):
-        altsayfalar = Selector(response).xpath('/html/body/section/div/div[9]/div[3]')
+        altsayfalar = Selector(response).xpath('//*[@class="infinite-item"]')
         item = SayfahasatItem()
-        itemtemp=[]
         for altsayfa in altsayfalar:
 
-            item["url"] = altsayfa.xpath('/figure/a').extract()
-            item["title"] = altsayfa.xpath('/figure/figcaption/a').extract()
-            itemtemp.append(item["url"])
+            item["url"] = altsayfa.xpath('.//a//@href').extract()
+            item["title"] = altsayfa.xpath('.//a//div[@class="title"]//text()').extract()
+            item["summary"] = altsayfa.xpath('.//a//div[@class="summary"]//text()').extract()
+
         yield item
     #     if itemtemp is not None:
     #         for i in itemtemp:
@@ -37,12 +42,46 @@ class Sayfahasadı(scrapy.Spider):
     #
     #         yield item
 
+class Sayfagiris(scrapy.Spider):
+    name="sayfagiris"
+    allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
+    start_urls = []
+    orn = Veritabani()
+    coll = orn.db.get_collection("sayfalars")
+    sorgu = coll.find({}, {"url": 1, "_id": 0})
+    urllist = sorgu.distinct("url")
+    for url in urllist:
+        start_urls.append(url)
 
-if __name__ == "__main__":
+    def parse(self, response):
+        sayfalar = Selector(response).xpath('//div[@class="news-content"]')
+        item = SayfahasatItem()
+        for sayfa in sayfalar:
+            item["sayfa"] = sayfa.xpath('.//p//text()').extract()
+        yield item
+
+
+
+
+
+
+if __name__ == "__main__" :
+
     from sayfahasatlama.sayfahasatlama.items import SayfahasatItem
     process = CrawlerProcess(get_project_settings())
     process.crawl(Sayfahasadı)
+    process.crawl(Sayfagiris)
     process.start()
-# else:
-#     from sayfahasatlama.items import SayfahasatItem
+
+
+    # configure_logging()
+    # runner = CrawlerRunner()
+    # @defer.inlineCallbacks
+    # def crawl():
+    #     yield runner.crawl(Sayfahasadı)
+    #     yield runner.crawl(Sayfagiris)
+    #     reactor.stop()
+    # crawl()
+    # reactor.run()
+
 
