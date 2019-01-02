@@ -31,7 +31,7 @@ class SayfahasatPipeline(object):
                     raise DropItem("Missing {0}!".format(data))
             if self.valid1:
                 self.collection.create_index([("sayfalar",pymongo.GEO2D)], unique=True)
-                self.collection.insert_one(item)
+                self.collection.update_one(item,upsert=True)
                 return item
         else:
             raise DropItem("KAYIP ITEM")
