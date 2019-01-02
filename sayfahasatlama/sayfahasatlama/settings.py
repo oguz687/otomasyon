@@ -64,11 +64,13 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 300,}
+ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 700,
+                  'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 800,
+                   }
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"
-MONGODB_COLLECTION = "sayfalars"
+MONGODB_COLLECTION = ["sayfalars", "sayfalar111"]
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -44,6 +44,9 @@ class Sayfahasadı(scrapy.Spider):
 
 class Sayfagiris(scrapy.Spider):
     name="sayfagiris"
+    # custom_settings = {
+    #     'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 600,
+    # }
     allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
     start_urls = []
     orn = Veritabani()
@@ -68,7 +71,8 @@ class Sayfagiris(scrapy.Spider):
 if __name__ == "__main__" :
 
     from sayfahasatlama.sayfahasatlama.items import SayfahasatItem
-    process = CrawlerProcess(get_project_settings())
+    # process = CrawlerProcess(get_project_settings())
+    process=CrawlerProcess(get_project_settings())
     process.crawl(Sayfahasadı)
     process.crawl(Sayfagiris)
     process.start()

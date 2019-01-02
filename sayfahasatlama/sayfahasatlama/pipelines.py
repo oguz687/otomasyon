@@ -20,23 +20,42 @@ class SayfahasatPipeline(object):
             SETTINGS['MONGODB_PORT']
         )
         db = connection[SETTINGS['MONGODB_DB']]
-        self.collection = db[SETTINGS['MONGODB_COLLECTION']]
+        self.collection = db[SETTINGS['MONGODB_COLLECTION'][0]]
 
     def process_item(self, item, spider):
         self.valid = True
-        if spider=="sayfagiris":
-            items="".join(item)
-            for data in items:
-                if not data:
-                    self.valid = False
-                    raise DropItem("Missing {0}!".format(data))
-            if self.valid:
-                self.collection.insert(dict(items))
-        else:
+        if spider.name == "sayfaspider":
             for data in item:
                 if not data:
                     self.valid = False
                     raise DropItem("Missing {0}!".format(data))
             if self.valid:
                 self.collection.insert(dict(item))
-        return item
+                return item
+        else:
+            raise DropItem("KAYIP ITEM")
+
+
+class SayfagirisPipeline(object):
+
+    def __init__(self):
+        SETTINGS = get_project_settings()
+        connection = pymongo.MongoClient(
+            SETTINGS['MONGODB_SERVER'],
+            SETTINGS['MONGODB_PORT']
+        )
+        db = connection[SETTINGS['MONGODB_DB']]
+        self.collection = db[SETTINGS['MONGODB_COLLECTION'][1]]
+
+    def process_item(self, item, spider):
+        self.valid = True
+        if spider.name =="sayfagiris":
+            for data in item:
+                if not data:
+                    self.valid = False
+                    raise DropItem("Missing {0}!".format(data))
+            if self.valid:
+                self.collection.insert(dict(item))
+                return item
+        else:
+            raise DropItem("kayıp item")
