@@ -16,7 +16,7 @@ class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
     allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
     start_urls=[]
-    for sayi in range(2):
+    for sayi in range(1,40):
         start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayi)
 
     def parse(self, response):
@@ -56,15 +56,10 @@ class Sayfagiris(scrapy.Spider):
             yield item
 
 
-
-
-
-
 if __name__ == "__main__" :
 
     from sayfahasatlama.sayfahasatlama.items import SayfahasatItem
-    # process = CrawlerProcess(get_project_settings())
-    process=CrawlerProcess(get_project_settings())
+    process = CrawlerProcess(get_project_settings())
     process.crawl(Sayfahasadı)
     process.crawl(Sayfagiris)
     process.start()

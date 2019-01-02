@@ -30,7 +30,8 @@ class SayfahasatPipeline(object):
                     self.valid1 = False
                     raise DropItem("Missing {0}!".format(data))
             if self.valid1:
-                self.collection.insert(dict(item))
+                self.collection.create_index([("sayfalar",pymongo.GEO2D)], unique=True)
+                self.collection.insert_one(item)
                 return item
         else:
             raise DropItem("KAYIP ITEM")
@@ -55,7 +56,7 @@ class SayfagirisPipeline(object):
                     self.valid = False
                     raise DropItem("Missing {0}!".format(data))
             if self.valid:
-                self.collection.insert(dict(item))
+                self.collection.insert_one(dict(item))
                 return item
         else:
             raise DropItem("kayıp item")
