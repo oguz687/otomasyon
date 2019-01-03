@@ -10,6 +10,7 @@ from scrapy.crawler import Settings
 # from scrapy.conf import settings
 from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
+from otomasyondb import Veritabani
 
 class SayfahasatPipeline(object):
 
@@ -23,6 +24,14 @@ class SayfahasatPipeline(object):
         self.collection = db[SETTINGS['MONGODB_COLLECTION'][0]]
 
     def process_item(self, item, spider):
+        orn = Veritabani()
+        coll = orn.db.get_collection("sayfalars")
+        sorgu = coll.find({}, {"url": 1, "_id": 0})
+        urllist = sorgu.distinct("url")
+        with open("dosya.txt","w+") as ds:
+            for i in urllist:
+                ds.write(i)
+                ds.write("\n")
         self.valid1 = True
         if spider.name == "sayfaspider":
             for data in item:
@@ -30,9 +39,15 @@ class SayfahasatPipeline(object):
                     self.valid1 = False
                     raise DropItem("Missing {0}!".format(data))
             if self.valid1:
-                self.collection.create_index([("sayfalar",pymongo.GEO2D)], unique=True)
-                self.collection.update_one(item,upsert=True)
-                return item
+                for url in item["url"]:
+                    if not url in urllist:
+                        try:
+                            self.collection.insert_one(item)
+                            return item
+                        except Exception:
+                            print(url, "      :bu sayfa var")
+                    else:
+                        print(url, " listede var")
         else:
             raise DropItem("KAYIP ITEM")
 
@@ -49,6 +64,14 @@ class SayfagirisPipeline(object):
         self.collection = db[SETTINGS['MONGODB_COLLECTION'][1]]
 
     def process_item(self, item, spider):
+        orn2 = Veritabani()
+        coll = orn2.db.get_collection("sayfalar111")
+        sorgu = coll.find({}, {"sayfa": 1, "_id": 0})
+        urllist = sorgu.distinct("sayfa")
+        with open("dosya3.txt", "w+") as ds:
+            for i in urllist:
+                ds.write(i)
+                ds.write("\n")
         self.valid = True
         if spider.name =="sayfagiris":
             for data in item:
@@ -56,7 +79,14 @@ class SayfagirisPipeline(object):
                     self.valid = False
                     raise DropItem("Missing {0}!".format(data))
             if self.valid:
-                self.collection.insert_one(dict(item))
-                return item
+                for url in item["sayfa"]:
+                    if not url in urllist:
+                        try:
+                            self.collection.insert_one(item)
+                            return item
+                        except Exception:
+                            print(url, "      :bu daha önce eklendi")
+                    else:
+                        print(url, "  daha önce listelendi")
         else:
             raise DropItem("kayıp item")

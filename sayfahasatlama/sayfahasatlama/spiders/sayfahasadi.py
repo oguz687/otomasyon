@@ -16,7 +16,7 @@ class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
     allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
     start_urls=[]
-    for sayi in range(1,40):
+    for sayi in range(1,5):
         start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayi)
 
     def parse(self, response):
