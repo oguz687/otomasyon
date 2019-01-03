@@ -14,19 +14,18 @@ from otomasyondb import Veritabani
 
 class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
-    allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
+    allowed_domains = ["internethaber.com/ekonomi", ]
     start_urls=[]
-    for sayi in range(1,5):
-        start_urls.append("http://ekonomi.haber7.com/turkiye-ekonomisi/p%s" % sayi)
+    for sayi in range(1,10):
+        start_urls.append("http://www.internethaber.com/ekonomi?page=%s" % sayi)
 
     def parse(self, response):
-        altsayfalar = Selector(response).xpath('//*[@class="infinite-item"]')
+        altsayfalar = Selector(response).xpath('//div[@class="wrap ctgry"]')
         item = SayfahasatItem()
         for altsayfa in altsayfalar:
 
-            item["url"] = altsayfa.xpath('.//a//@href').extract()
-            item["title"] = altsayfa.xpath('.//a//div[@class="title"]//text()').extract()
-            item["summary"] = altsayfa.xpath('.//a//div[@class="summary"]//text()').extract()
+            item["url"] = altsayfa.xpath('.//ul[@class="list"]//li/a[1]//@href').extract()
+            item["title"] = altsayfa.xpath('.//ul[@class="list"]//li/a[1]//@title').extract()
 
             yield item
 
@@ -34,7 +33,7 @@ class Sayfahasadı(scrapy.Spider):
 class Sayfagiris(scrapy.Spider):
     name="sayfagiris"
     custom_settings={}
-    allowed_domains = ["ekonomi.haber7.com/turkiye-ekonomisi/", ]
+    allowed_domains = ["internethaber.com/ekonomi/", ]
     start_urls = []
     orn = Veritabani()
     coll = orn.db.get_collection("sayfalars")
@@ -49,10 +48,11 @@ class Sayfagiris(scrapy.Spider):
 
 
     def parse(self, response):
-        sayfalar = Selector(response).xpath('//div[@class="news-content"]')
+        sayfalar = Selector(response).xpath('/html')
         item = SayfahasatItem()
         for sayfa in sayfalar:
-            item["sayfa"] = sayfa.xpath('.//p//text()').extract()
+            item["url"] = sayfa.xpath("/head//link[@rel='canonical']")
+            item["sayfa"] = sayfa.xpath('//div[@class="time"]//div[@class="news-detail-content"]//p//text()').extract()
             yield item
 
 

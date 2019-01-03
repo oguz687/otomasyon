@@ -13,6 +13,6 @@ class SayfahasatItem(Item):
     _id = Field()
     title = Field()
     url = Field()
-    summary = Field()
+    # summary = Field()
     sayfa = Field()
 
