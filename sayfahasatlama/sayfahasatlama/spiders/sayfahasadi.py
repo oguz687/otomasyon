@@ -24,18 +24,19 @@ class Sayfahasadı(scrapy.Spider):
         altsayfalar = Selector(response).xpath('.//div[@class="katListe2"]')
         for altsayfa in altsayfalar:
 
-            url = altsayfa.xpath('.//div[@class="row"]//a//@href').extract_first()
+            urls = altsayfa.xpath('.//div[@class="row"]//a//@href').extract()
             # item["title"] = altsayfa.xpath('.//div[@class="row"]//a//div[@class="txt"]//@title').extract()
 
-            yield response.follow(url,self.switch_page())
+            for url in urls:
+                yield response.follow(url,self.parse_switch_page)
 
-    def switch_page(self):
-        sayfalar = Selector(response).xpath('.//div[@class="katListe2"]')
+    def parse_switch_page(self,response):
+        sayfalar = Selector(response).xpath('.//div[@id="trtdty"]')
         item = SayfahasatItem()
         for sayfa in sayfalar:
-            item["url2"] = sayfa.xpath(".//head").extract()
-            item["sayfa"] = sayfa.xpath(".//body").extract()
-        yield item
+            item["url2"] = sayfa.xpath(".//p").extract()
+            item["sayfa"] = sayfa.xpath(".//p").extract()
+            yield item
 
 
 
