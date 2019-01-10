@@ -14,11 +14,12 @@ import time
 class Sayfahasadı(scrapy.Spider):
     from otomasyondb import Veritabani
     name = "sayfaspider"
-    allowed_domains = ["trthaber.com/", ]
-    start_urls=[]
+    allowed_domains = ["trthaber.com/"]
     print("bu ikinci sinyaldir")
-    for sayi in range(1,3):
-        start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi)
+    start_urls = ["https://www.trthaber.com/haber/ekonomi/",]
+    for sayi in range(2,3):
+
+        start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi,)
 
     def parse(self, response):
         altsayfalar = Selector(response).xpath('.//div[@class="katListe2"]')
@@ -28,47 +29,16 @@ class Sayfahasadı(scrapy.Spider):
             # item["title"] = altsayfa.xpath('.//div[@class="row"]//a//div[@class="txt"]//@title').extract()
 
             for url in urls:
-                yield response.follow(url,self.parse_switch_page)
+                print(url)
+                yield response.follow(url,callback=self.parse_switch_page,dont_filter=True,meta={"item": url})
 
     def parse_switch_page(self,response):
         sayfalar = Selector(response).xpath('.//div[@id="trtdty"]')
         item = SayfahasatItem()
         for sayfa in sayfalar:
-            item["url2"] = sayfa.xpath(".//p").extract()
-            item["sayfa"] = sayfa.xpath(".//p").extract()
+            item["url2"] = response.meta["item"]
+            item["sayfa"] = sayfa.xpath(".//p/text()").extract()
             yield item
-
-
-
-
-
-# class Sayfagiris(scrapy.Spider):
-#     from otomasyondb import Veritabani
-#     name="sayfagiris"
-#     custom_settings = {}
-#     allowed_domains = ["trthaber.com/", ]
-#     start_urls = []
-#     print("bu bir sinyaldir")
-#     orn = Veritabani()
-#     coll = orn.db.get_collection("sayfalars")
-#     sorgu = coll.find({}, {"url": 1, "_id": 0})
-#     urllist = sorgu.distinct("url")
-#     for url in urllist:
-#         print("kırr  ",url)
-#         start_urls.append(url)
-#     if len(urllist) != 0:
-#         custom_setting = {"ITEM_PIPELINES": {"sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline": 100,}
-#         }
-#         custom_settings.update(custom_setting)
-#
-#
-#     def parse(self, response):
-#         sayfalar = Selector(response).xpath('.//div[@class="katListe2"]')
-#         item = SayfahasatItem()
-#         for sayfa in sayfalar:
-#             item["url2"] = sayfa.xpath(".//head").extract()   #//link[@rel='canonical']//@href"
-#             item["sayfa"] = sayfa.xpath(".//body").extract()  #div[@class="news-detail-content"]//p//text()
-#         yield item
 
 
 if __name__ == "__main__" :

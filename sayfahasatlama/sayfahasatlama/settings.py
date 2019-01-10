@@ -16,13 +16,13 @@ NEWSPIDER_MODULE = 'sayfahasatlama.sayfahasatlama.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 1
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -46,15 +46,15 @@ COOKIES_ENABLED = False
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'sayfahasatlama.sayfahasatlama.middlewares.SayfahasatlamaSpiderMiddleware': 211,
-}
+# SPIDER_MIDDLEWARES = {
+#     'sayfahasatlama.sayfahasatlama.middlewares.SayfahasatlamaSpiderMiddleware': 543,
+# }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'sayfahasatlama.sayfahasatlama.middlewares.SayfahasatlamaDownloaderMiddleware': 500,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     'sayfahasatlama.sayfahasatlama.middlewares.SayfahasatlamaDownloaderMiddleware': 543,
+# }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,7 +64,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 418,
+ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 300,
                  }
 #'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 300,
 MONGODB_SERVER = "localhost"
