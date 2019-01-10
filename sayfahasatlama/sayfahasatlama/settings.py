@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = True
+#COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -65,8 +65,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 200,
+                  'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 300,
                  }
-#'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 300,
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"
