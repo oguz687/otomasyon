@@ -16,27 +16,29 @@ class Sayfahasadı(scrapy.Spider):
     name = "sayfaspider"
     allowed_domains = ["trthaber.com/"]
     print("bu ikinci sinyaldir")
-    start_urls = ["https://www.trthaber.com/haber/ekonomi/",]
-    for sayi in range(2,3):
+    start_urls = []
+    for sayi in range(1,3):
 
         start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi,)
 
     def parse(self, response):
         altsayfalar = Selector(response).xpath('.//div[@class="katListe2"]')
+        urllist=[]
         for altsayfa in altsayfalar:
 
             urls = altsayfa.xpath('.//div[@class="row"]//a//@href').extract()
-            # item["title"] = altsayfa.xpath('.//div[@class="row"]//a//div[@class="txt"]//@title').extract()
+            urllist.extend(urls)
+        for url2 in urllist:
+            url="https://www.trthaber.com/"+url2
+            print(url)
+            yield response.follow(url, callback=self.parse_switch_page, dont_filter=True, meta={"item": url})
 
-            for url in urls:
-                print(url)
-                yield response.follow(url,callback=self.parse_switch_page,dont_filter=True,meta={"item": url})
 
-    def parse_switch_page(self,response):
+    def parse_switch_page(self, response):
         sayfalar = Selector(response).xpath('.//div[@id="trtdty"]')
         item = SayfahasatItem()
         for sayfa in sayfalar:
-            item["url2"] = response.meta["item"]
+            item["url"] = response.meta["item"]
             item["sayfa"] = sayfa.xpath(".//p/text()").extract()
             yield item
 

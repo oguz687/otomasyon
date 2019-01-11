@@ -64,13 +64,12 @@ COOKIES_ENABLED = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 300,
-                 }
+ITEM_PIPELINES = {'sayfahasatlama.sayfahasatlama.pipelines.SayfahasatPipeline': 300}
 #'sayfahasatlama.sayfahasatlama.pipelines.SayfagirisPipeline': 300,
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Veritabanı0"
-MONGODB_COLLECTION = ["sayfalars", "sayfalar111"]
+MONGODB_COLLECTION = "sayfalars"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

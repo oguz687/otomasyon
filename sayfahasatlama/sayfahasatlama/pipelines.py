@@ -23,10 +23,11 @@ class SayfahasatPipeline(object):
             SETTINGS['MONGODB_PORT']
         )
         db = connection[SETTINGS['MONGODB_DB']]
-        self.collection = db[SETTINGS['MONGODB_COLLECTION'][0]]
+        self.collection = db[SETTINGS['MONGODB_COLLECTION']]
 
     def process_item(self, item, spider):
         orn = Veritabani()
+        urllist=[]
         coll = orn.db.get_collection("sayfalars")
         sorgu = coll.find({}, {"url": 1, "_id": 0})
         urllist = sorgu.distinct("url")
@@ -34,21 +35,27 @@ class SayfahasatPipeline(object):
             for i in urllist:
                 ds.write(i)
                 ds.write("\n")
-        self.valid1 = True
-        if spider.name == "sayfaspider":
-            for data in item:
-                if not data:
-                    self.valid1 = False
-                    raise DropItem("Missing {0}!".format(data))
-            if self.valid1:
-                for url in item["url2"]:
-                    if not url in urllist:
-                        try:
-                            self.collection.insert_one(item)
-                            return item
-                        except Exception:
-                            print(url, "      :bu sayfa var")
-                    else:
-                        print(url, " listede var")
-        else:
-            raise DropItem("KAYIP ITEM")
+
+        for url in item:
+            tokensayfa = word_tokenize(item["sayfa"])
+            hashurl=hash(str(item["url"]))
+            self.collection.insert_one({tokensayfa: hashurl})
+        # self.valid1 = True
+
+        # for data in item:
+        #     if not data:
+        #         self.valid1 = False
+        #         raise DropItem("Missing {0}!".format(data))
+        # if self.valid1==True:
+        #     for url in item["url"]:
+        #         if not url in urllist:
+        #             try:
+        #                 tokensayfa=word_tokenize(item["sayfa"])
+        #                 hashurl=hash(str(item["url"]))
+        #                 self.collection.insert_one({tokensayfa: hashurl})
+        #                 return item
+        #             except Exception:
+        #                 print(url, "      :bu sayfa var")
+        #         else:
+        #             print(url, " listede var")
+
