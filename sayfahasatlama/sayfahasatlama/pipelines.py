@@ -12,6 +12,7 @@ from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
 from otomasyondb import Veritabani
 from nltk.tokenize import word_tokenize
+from nltk.tokenize import RegexpTokenizer
 
 
 class SayfahasatPipeline(object):
@@ -36,10 +37,13 @@ class SayfahasatPipeline(object):
                 ds.write(i)
                 ds.write("\n")
 
-        for url in item:
-            tokensayfa = word_tokenize(item["sayfa"])
-            hashurl=hash(str(item["url"]))
-            self.collection.insert_one({tokensayfa: hashurl})
+        # tokenizer = RegexpTokenizer(r'\w+')
+        # tokensayfa=tokenizer.tokenize(tokensayfa2)
+
+        tokensayfa2 = word_tokenize(str(item["sayfa"]))
+        hashurl="".join(item["url"])
+        hashurl2=hash(hashurl)
+        self.collection.insert_one({"url:":hashurl2,"sayfa":tokensayfa2})
         # self.valid1 = True
 
         # for data in item:
