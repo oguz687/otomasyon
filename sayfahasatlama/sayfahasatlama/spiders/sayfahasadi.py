@@ -17,7 +17,7 @@ class Sayfahasadı(scrapy.Spider):
     allowed_domains = ["trthaber.com/"]
     print("bu ikinci sinyaldir")
     start_urls = []
-    for sayi in range(1,3):
+    for sayi in range(1,2):
 
         start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi,)
 
