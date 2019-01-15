@@ -65,7 +65,11 @@ class SayfahasatPipeline(object):
         for t in tokensayfa2:
             if not t in stopwordss:
                 s= re.sub(r"\b\d+\b","", t)
+                s=re.sub(r"[']+","",s)
+                s=re.sub(r"[.]+","",s)
+                s=re.sub(r"\\xa0","",s)
                 s1 = re.sub(r"\\r\\n\\t","", s)
+
                 # s=' '.join(t.split())
                 # y=t.maketrans("\r\n\t", "   ")
                 # s=t.translate(y)
@@ -76,8 +80,8 @@ class SayfahasatPipeline(object):
                 # s1=ps.stemWord(s)
                 # s=t.replace("[\r\n\t]","")
                 s2 = ss.stemWord(s1)
-                if len(s1) != 0 and s1 != ",":
-                    tokenstopword.append(s1.lower())
+                if len(s2) != 0 and len(s2) != 1 and s2 != ",":
+                    tokenstopword.append(s2.lower())
 
 
         hashurl="".join(item["url"])
