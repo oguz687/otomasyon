@@ -16,7 +16,7 @@ from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from nltk.text import Text
 from nltk.tokenize import RegexpTokenizer
-from string import punctuation
+from string import punctuation,digits
 import re
 import string
 from snowballstemmer import TurkishStemmer,stemmer
@@ -54,7 +54,7 @@ class SayfahasatPipeline(object):
         # rawtext = expandraw.translate(escapes)
         tokensayfa2 = word_tokenize(raw,language="turkish",preserve_line=True)
         stopwordss= stopwords.words("turkish")
-        ekleme2=["“","xa0","\n","\t","\r",".",",","[","]","?"," ",'"',"'",'``',"''","’"]
+        ekleme2=["“","xa0","\n","\t","\r",".",", ","[","]","?"," ",'"',"'",'``',"''","’",","]
         ekleme=list(punctuation)
         stopwordss.extend(ekleme)
         stopwordss.extend(ekleme2)
@@ -64,7 +64,8 @@ class SayfahasatPipeline(object):
 
         for t in tokensayfa2:
             if not t in stopwordss:
-                s = re.sub(r"\\r\\n\\t", '', t)
+                s= re.sub(r"\b\d+\b","", t)
+                s1 = re.sub(r"\\r\\n\\t","", s)
                 # s=' '.join(t.split())
                 # y=t.maketrans("\r\n\t", "   ")
                 # s=t.translate(y)
@@ -74,8 +75,9 @@ class SayfahasatPipeline(object):
                 # s = regex.sub(,"", str(t))
                 # s1=ps.stemWord(s)
                 # s=t.replace("[\r\n\t]","")
-                s1 = ss.stemWord(s)
-                tokenstopword.append(s.lower())
+                s2 = ss.stemWord(s1)
+                if len(s1) != 0 and s1 != ",":
+                    tokenstopword.append(s1.lower())
 
 
         hashurl="".join(item["url"])
