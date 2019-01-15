@@ -11,15 +11,15 @@ from scrapy.crawler import Settings
 from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
 from otomasyondb import Veritabani
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize,sent_tokenize
 from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from nltk.text import Text
 from nltk.tokenize import RegexpTokenizer
 from string import punctuation
-
-
-
+import re
+import string
+from snowballstemmer import TurkishStemmer,stemmer
 class SayfahasatPipeline(object):
 
     def __init__(self):
@@ -46,20 +46,36 @@ class SayfahasatPipeline(object):
         # tokens = wordpunct_tokenize()
         # text = Text(tokens)
         # words = [w.lower() for w in text if w.isalpha()]
+        # t = str.maketrans("\r\n\t","   ")
         raw=str(item["sayfa"])
-        expandraw=raw.expandtabs()
-        escapes = ''.join([chr(char) for char in range(1, 32)])
-        rawtext = expandraw.translate(escapes)
-        tokensayfa2 = word_tokenize(rawtext,language="turkish",preserve_line=True)
+        # s = raw.translate(t)
+        # expandraw=s.expandtabs()
+        # escapes = ''.join([chr(char) for char in range(1, 32)])
+        # rawtext = expandraw.translate(escapes)
+        tokensayfa2 = word_tokenize(raw,language="turkish",preserve_line=True)
         stopwordss= stopwords.words("turkish")
-        # ekleme=["xa0","\n","\t","\r",".",",","[","]","?"," ",'"',"'",'``',"''"]
+        ekleme2=["“","xa0","\n","\t","\r",".",",","[","]","?"," ",'"',"'",'``',"''","’"]
         ekleme=list(punctuation)
         stopwordss.extend(ekleme)
+        stopwordss.extend(ekleme2)
         tokenstopword=[]
+        ps = TurkishStemmer()
+        ss = stemmer("turkish")
+
         for t in tokensayfa2:
             if not t in stopwordss:
-                tokenstopword.append(t.lower())
-
+                s = re.sub(r"\\r\\n\\t", '', t)
+                # s=' '.join(t.split())
+                # y=t.maketrans("\r\n\t", "   ")
+                # s=t.translate(y)
+                # s=t.rstrip("\r")
+                # s=re.sub(r'\r\n', '', str(t))
+                # regex = re.compile(r"['\r']")
+                # s = regex.sub(,"", str(t))
+                # s1=ps.stemWord(s)
+                # s=t.replace("[\r\n\t]","")
+                s1 = ss.stemWord(s)
+                tokenstopword.append(s.lower())
 
 
         hashurl="".join(item["url"])

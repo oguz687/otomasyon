@@ -39,9 +39,8 @@ class Sayfahasadı(scrapy.Spider):
         item = SayfahasatItem()
         for sayfa in sayfalar:
             item["url"] = response.meta["item"]
-            item["sayfa"] = sayfa.xpath(".//p/text()").extract()
+            item["sayfa"] = sayfa.xpath(".//p//text()[normalize-space()]").extract()
             yield item
-
 
 if __name__ == "__main__" :
 
