@@ -18,7 +18,6 @@ class Sayfahasadı(scrapy.Spider):
     print("bu ikinci sinyaldir")
     start_urls = []
     for sayi in range(1,2):
-
         start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi,)
 
     def parse(self, response):
@@ -41,6 +40,7 @@ class Sayfahasadı(scrapy.Spider):
             item["url"] = response.meta["item"]
             item["sayfa"] = sayfa.xpath(".//p//text()[normalize-space()]").extract()
             yield item
+
 
 if __name__ == "__main__" :
 
