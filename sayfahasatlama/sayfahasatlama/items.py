@@ -14,5 +14,5 @@ class SayfahasatItem(Item):
     target = Field()
     url = Field()
     url2 = Field()
-    sayfa = Field()
+    data = Field()
 

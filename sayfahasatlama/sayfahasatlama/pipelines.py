@@ -36,7 +36,7 @@ class SayfahasatPipeline(object):
 
     def process_item(self, item, spider):
 
-        raw = str(item["sayfa"])
+        raw = str(item["data"])
         tokensayfa2 = word_tokenize(raw, language="turkish", preserve_line=True)
         stopwordss = stopwords.words("turkish")
         ekleme2 = ["“", "xa0", "\n", "\t", "\r", ".", ", ", "[", "]", "?", " ", '"', "'", '``', "''", "’", ","]
@@ -61,4 +61,4 @@ class SayfahasatPipeline(object):
         hashurl2 = hash(hashurl)
         konupath = pathlib.PurePath(item["url"])
         konu = konupath.parts[3]
-        self.collection.insert_one({"url": hashurl2, "target": konu, "sayfa": tokenstopword})
+        self.collection.insert_one({"url": hashurl2, "target": konu, "data": tokenstopword})
