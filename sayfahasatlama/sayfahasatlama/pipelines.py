@@ -11,62 +11,51 @@ from scrapy.crawler import Settings
 from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
 from otomasyondb import Veritabani
-from nltk.tokenize import word_tokenize,sent_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk import wordpunct_tokenize
 from nltk.text import Text
 from nltk.tokenize import RegexpTokenizer
-from string import punctuation,digits
+from string import punctuation, digits
 from TurkishStemmer import TurkishStemmer as tust
 import re
 import string
-from snowballstemmer import TurkishStemmer,stemmer
+from snowballstemmer import TurkishStemmer, stemmer
+
+
 class SayfahasatPipeline(object):
 
     def __init__(self):
         SETTINGS = get_project_settings()
         connection = pymongo.MongoClient(
             SETTINGS['MONGODB_SERVER'],
-            SETTINGS['MONGODB_PORT']
-        )
+            SETTINGS['MONGODB_PORT'])
         db = connection[SETTINGS['MONGODB_DB']]
         self.collection = db[SETTINGS['MONGODB_COLLECTION']]
 
     def process_item(self, item, spider):
-        orn = Veritabani()
-        coll = orn.db.get_collection("sayfalars")
-        sorgu = coll.find({}, {"url": 1, "_id": 0})
-        urllist = sorgu.distinct("url")
-        with open("dosya.txt","w+") as ds:
-            for i in urllist:
-                ds.write(str(i))
-                ds.write("\n")
 
-        raw=str(item["sayfa"])
-        tokensayfa2 = word_tokenize(raw,language="turkish",preserve_line=True)
-        stopwordss= stopwords.words("turkish")
-        ekleme2=["“","xa0","\n","\t","\r",".",", ","[","]","?"," ",'"',"'",'``',"''","’",","]
-        ekleme=list(punctuation)
+        raw = str(item["sayfa"])
+        tokensayfa2 = word_tokenize(raw, language="turkish", preserve_line=True)
+        stopwordss = stopwords.words("turkish")
+        ekleme2 = ["“", "xa0", "\n", "\t", "\r", ".", ", ", "[", "]", "?", " ", '"', "'", '``', "''", "’", ","]
+        ekleme = list(punctuation)
         stopwordss.extend(ekleme)
         stopwordss.extend(ekleme2)
-        tokenstopword=[]
+        tokenstopword = []
         ss = stemmer("turkish")
-        ps= tust()
+        ps = tust()
         for t in tokensayfa2:
             if not t in stopwordss:
-                s= re.sub(r"\b\d+\b","", t)
-                s=re.sub(r"[']+","",s)
-                s=re.sub(r"[.]+","",s)
-                s=re.sub(r"\\xa0","",s)
-                s1 = re.sub(r"\\r\\n\\t","", s)
-
-                s2=ps.stem(s1)
+                s = re.sub(r"\b\d+\b", "", t)
+                s = re.sub(r"[']+", "", s)
+                s = re.sub(r"[.]+", "", s)
+                s = re.sub(r"\\xa0", "", s)
+                s1 = re.sub(r"\\r\\n\\t", "", s)
+                s2 = ps.stem(s1)
                 if len(s2) != 0 and len(s2) != 1 and s2 != ",":
                     tokenstopword.append(s2.lower())
 
-
-        hashurl="".join(item["url"])
-        hashurl2=hash(hashurl)
+        hashurl = "".join(item["url"])
+        hashurl2 = hash(hashurl)
         self.collection.insert_one({"url": hashurl2, "sayfa": tokenstopword})
-
-

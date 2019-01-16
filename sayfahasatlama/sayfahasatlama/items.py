@@ -11,7 +11,7 @@ from scrapy.item import Item, Field
 
 class SayfahasatItem(Item):
     _id = Field()
-    title = Field()
+    target = Field()
     url = Field()
     url2 = Field()
     sayfa = Field()
