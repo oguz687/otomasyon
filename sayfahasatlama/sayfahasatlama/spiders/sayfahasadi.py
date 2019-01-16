@@ -17,7 +17,17 @@ class Sayfahasadı(scrapy.Spider):
     print("bu ikinci sinyaldir")
     start_urls = []
     for sayi in range(1, 2):
-        start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi, )
+        start_urls.append("https://www.trthaber.com/haber/ekonomi/%s.sayfa.html" % sayi)
+    for sayi in range(1, 2):
+        start_urls.append("https://www.trthaber.com/haber/saglik/%s.sayfa.html" % sayi)
+    for sayi in range(1, 2):
+        start_urls.append("https://www.trthaber.com/haber/bilim-teknoloji/%s.sayfa.html" % sayi)
+    for sayi in range(1, 2):
+        start_urls.append("https://www.trthaber.com/haber/kultur-sanat/%s.sayfa.html" % sayi)
+    for sayi in range(1, 2):
+        start_urls.append("https://www.trthaber.com/haber/yasam/%s.sayfa.html" % sayi)
+    for sayi in range(1, 2):
+        start_urls.append("https://www.trthaber.com/haber/dunya/%s.sayfa.html" % sayi)
 
     def parse(self, response):
         altsayfalar = Selector(response).xpath('.//div[@class="katListe2"]')

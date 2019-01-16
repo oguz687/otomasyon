@@ -21,6 +21,7 @@ from TurkishStemmer import TurkishStemmer as tust
 import re
 import string
 from snowballstemmer import TurkishStemmer, stemmer
+import pathlib
 
 
 class SayfahasatPipeline(object):
@@ -58,4 +59,6 @@ class SayfahasatPipeline(object):
 
         hashurl = "".join(item["url"])
         hashurl2 = hash(hashurl)
-        self.collection.insert_one({"url": hashurl2, "sayfa": tokenstopword})
+        konupath = pathlib.PurePath(item["url"])
+        konu = konupath.parts[3]
+        self.collection.insert_one({"url": hashurl2, "target": konu, "sayfa": tokenstopword})
