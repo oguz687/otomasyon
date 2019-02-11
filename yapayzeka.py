@@ -59,28 +59,24 @@ class Yapayzeka():
 
     def veritabanigetir(self):
         DATABASE = Veritabani().db["sayfalars"]
-        DATABASE.create_index([("target","text")])
-        coll=DATABASE.aggregate([{"$match":{"$text":{"$search":"ekonomi saglik bilim-teknoloji kultur-sanat yasam"}},},
-                                 {"$project": {"_id":0,"target": 1,"data": {"$gt":["$data",[]]}}},
-                                 {"$bucketAuto":{"groupBy": "$target","buckets": 50}},
-                                 {"$limit": 10000},
-                                 ])
-        for i in coll:
-            print(i)
-
-        # coll = DATABASE.find({"$and": [
-        #     {"target": {"$nin": ["turkiye", "dunya", "gundem"]}},
-        #     {"data": {"$gt": []}},
-        #     {"target": {"$in": ["yasam", "ekonomi",
-        #                         "bilim-teknoloji",
-        #                         "kultur-sanat",
-        #                         "saglik"],
-        #                 }}
-        # ]}, {"_id": 0, "url": 0})
-        #
-        #
+        # DATABASE.create_index([("target","text")])
+        # coll=DATABASE.aggregate([{"$group":{"_id":"$target"}}])
         # for i in coll:
         #     print(i)
+
+        coll = DATABASE.find({"$and": [
+            {"target": {"$nin": ["turkiye", "dunya", "gundem","magazin","spor","cevre","medya","egitim"]}},
+            {"data": {"$gt": []}},
+            {"target": {"$in": ["yasam", "ekonomi",
+                                "bilim-teknoloji",
+                                "kultur-sanat",
+                                "saglik"],
+                        }},
+
+        ]}, {"_id": 0, "url": 0})
+
+
+
         # print(type(coll),coll.count())
         # coll = DATABASE.find({"target":{"$nin":["turkiye","dunya","gundem"]}}, {"_id": 0, "url": 0})
 
@@ -111,11 +107,11 @@ class Yapayzeka():
         X_train = stemmed
         pipeline = Pipeline(steps=[
             ('vect', CountVectorizer()),
-            ('tfidf', LatentDirichletAllocation(n_jobs=1, verbose=1, n_components=5, learning_method="batch")),
-            ('clf', svm.SVC(kernel="linear", verbose=True),)])
+            ('tfidf', LatentDirichletAllocation(n_jobs=3, verbose=1, learning_method="batch")),
+            ('clf', RandomForestClassifier(verbose=2,n_jobs=3),)])
 
 
-        predicted = pipeline.fit(X_train[100:], y_train[100:])
+        predicted = pipeline.fit(X_train, y_train)
         pcdump = pickle.dump(predicted, open("deneme.sav", "wb"))
         return pcdump
 
@@ -186,5 +182,5 @@ class Yapayzeka():
 
 if __name__ == "__main__":
     orn = Yapayzeka()
-    orn.veritabanigetir()
+    orn.predict_from_model()
 
